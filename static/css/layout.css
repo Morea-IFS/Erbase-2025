@@ -11,6 +11,10 @@ body {
     /* Use dynamic viewport height for better responsiveness */
 }
 
+section {
+    scroll-margin-top: 70px;
+  }
+
 .navbar {
     background-color: #29166F;
     min-height: 70px;
