@@ -1,0 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* Hero Styles */
+
+.hero {
+    background-color: black;
+    height: calc(100dvh - 70px); /* Full height minus navbar height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
