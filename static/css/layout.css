@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding-top: 70px;
+    /* Adjusted for fixed navbar height */
+    min-height: 100dvh;
+    /* Use dynamic viewport height for better responsiveness */
+}
+
+.navbar {
+    background-color: #29166F;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba(255, 255, 255, 1)' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+.navbar-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.burger {
+    position: relative;
+    width: 30px;
+    height: 22px;
+    display: block;
+    cursor: pointer;
+}
+
+.burger input {
+    display: none;
+}
+
+.burger span {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    background-color: white;
+    border-radius: 9px;
+    transition: 0.3s ease-in-out;
+    transform-origin: center;
+}
+
+.burger span:nth-child(2) {
+    top: 0;
+}
+
+.burger span:nth-child(3) {
+    top: 10px;
+}
+
+.burger span:nth-child(4) {
+    top: 20px;
+}
+
+.burger input:checked~span:nth-child(2) {
+    transform: rotate(45deg);
+    top: 10px;
+}
+
+.burger input:checked~span:nth-child(3) {
+    opacity: 0;
+}
+
+.burger input:checked~span:nth-child(4) {
+    transform: rotate(-45deg);
+    top: 10px;
+}
