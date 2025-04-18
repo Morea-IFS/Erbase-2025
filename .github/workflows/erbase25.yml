@@ -1,0 +1,31 @@
+name: Main Worflow Pipeline
+run-name: ${{ github.actor }} Worflow Code  🚀
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  DeployProd:
+    name: Deploy to Production
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: 'http://erbase.morea-fs.org'
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Set up SSH
+        run: |
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H ${{ secrets.SSH_IP }} >> ~/.ssh/known_hosts
+
+      - name: Deploy Application
+        run: |
+          ssh ${{ secrets.SSH_USER }}@${{ secrets.SSH_IP }} << 'EOF'
+          cd ${{ secrets.INSIDE_PROJECT_DIR }}
+          git pull origin main
+          date
+          EOF
