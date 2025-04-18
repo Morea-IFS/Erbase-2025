@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     environment:
       name: production
-      url: 'http://erbase.morea-fs.org'
+      url: 'http://erbase.morea-ifs.org'
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
