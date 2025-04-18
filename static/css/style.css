@@ -16,3 +16,40 @@
     align-items: center;
     color: white;
 }
+
+.chamada-card {
+    background-color: #ddd; 
+    border-radius: 10px;
+    border: 1px solid #aaa;
+    overflow: hidden;
+    height: 100%; 
+}
+
+.faixa-preta { 
+    width: 12px;
+    background-color: #000;
+    min-height: 100%; 
+    flex-shrink: 0; 
+}
+
+.avatar-cinza {
+    width: 40px;
+    height: 40px;
+    background-color: #999;
+    border-radius: 50%;
+}
+
+.icone-link {
+    font-size: 1rem;
+    color: #000;
+    text-decoration: none;
+    transition: color 0.2s ease-in-out;
+}
+
+.icone-link:hover {
+    color: #007bff;
+}
+
+.conteudo-card {
+    flex-grow: 1; 
+}
