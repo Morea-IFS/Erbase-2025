@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         if (!activated) {
-            setActive(nav.querySelector('.nav-link[href="#inicio"]'));
+            setActive(nav.querySelector('.nav-link[href="#home"]'));
         }
     };
 

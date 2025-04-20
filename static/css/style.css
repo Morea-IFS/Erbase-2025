@@ -17,7 +17,7 @@
     color: white;
 }
 
-.chamada-card {
+.call-card {
     background-color: #ddd; 
     border-radius: 10px;
     border: 1px solid #aaa;
@@ -25,31 +25,31 @@
     height: 100%; 
 }
 
-.faixa-preta { 
+.black-stripe { 
     width: 12px;
     background-color: #000;
     min-height: 100%; 
     flex-shrink: 0; 
 }
 
-.avatar-cinza {
+.gray-avatar {
     width: 40px;
     height: 40px;
     background-color: #999;
     border-radius: 50%;
 }
 
-.icone-link {
+.icon-link {
     font-size: 1rem;
     color: #000;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
 }
 
-.icone-link:hover {
+.icon-link:hover {
     color: #007bff;
 }
 
-.conteudo-card {
+.card-content {
     flex-grow: 1; 
 }
