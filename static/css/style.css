@@ -6,6 +6,12 @@
     font-family: 'Poppins', sans-serif;
 }
 
+/* Global Styles */
+
+a {
+    text-decoration: none;
+}
+
 /* Hero Styles */
 
 .hero {
