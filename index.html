@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="utf-8">
@@ -18,11 +18,10 @@
 <body>
     <!-- Navbar -->
     <header class="fixed-top">
-        <nav class="navbar navbar-expand-md border-white border-bottom border-1">
+        <nav class="navbar navbar-expand-md border-bottom border-1">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="static/images/complete-logo.png" alt="Erbase Logo" width="140"
-                        class="d-inline-block align-text-top">
+                    <img src="static/images/complete-logo.png" alt="Erbase Logo" width="140" class="d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler border-0 p-0 m-0" type="button">
                     <label class="burger" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -34,12 +33,27 @@
                     </label>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav nav-underline d-flex align-items-center me-md-5">
-                        <a class="nav-link text-white" href="#home">Início</a>
-                        <a class="nav-link text-white" href="#about">Sobre</a>
-                        <a class="nav-link text-white" href="#calls">Chamadas</a>
-                        <a class="nav-link text-white" href="#schedule">Programação</a>
-                        <a class="nav-link text-white" href="#registrations">Inscrições</a>
+                    <div class="navbar-nav nav-underline d-flex align-items-center me-md-5 gap-3">
+                        <a class="nav-link text-white d-flex align-items-center" href="#home">
+                            <i class="fas fa-home me-2"></i>
+                            <span>Início</span>
+                        </a>
+                        <a class="nav-link text-white d-flex align-items-center" href="#about">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <span>Sobre</span>
+                        </a>
+                        <a class="nav-link text-white d-flex align-items-center" href="#calls">
+                            <i class="fas fa-bullhorn me-2"></i>
+                            <span>Chamadas</span>
+                        </a>
+                        <a class="nav-link text-white d-flex align-items-center" href="#schedule">
+                            <i class="fas fa-calendar-alt me-2"></i>
+                            <span>Programação</span>
+                        </a>
+                        <a class="nav-link text-white d-flex align-items-center" href="#registrations">
+                            <i class="fas fa-edit me-2"></i>
+                            <span>Inscrições</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -47,13 +61,21 @@
     </header>
     <!--End Navbar-->
     <main>
+        <!-- Invisible navbar -->
+         <div class="invisible-navbar"></div>
+        <!-- End invisible navbar -->
         <!-- Hero Section -->
         <section class="hero py-5 text-center" id="home">
             <div class="container text-center">
                 <h1 class="display-2 mb-4"><strong>ERBASE 2025</strong></h1>
                 <p class="lead fs-5 text-center mb-4"><strong>XVIII ESCOLA REGIONAL DE COMPUTAÇÃO <br> BAHIA - ALAGOAS -
                         SERGIPE</strong></p>
-                <a href="#" class="btn btn-primary btn-lg">Inscreva-se agora!</a>
+                <a href="#">
+                    <button class="btn btn-primary btn-lg mt-3" type="button">
+                        <i class="fas fa-user-plus"></i>
+                        <span class="ms-2">Inscreva-se agora!</span>
+                    </button>
+                </a>
             </div>
         </section>
         <!-- End Hero Section -->
@@ -64,7 +86,7 @@
 
                 <!-- Block 1 -->
                 <div class="row align-items-center mb-5">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 mb-4">
                         <p class="small-label">(Parte que fala do evento em si)</p>
                         <p>
                             A ERBASE é promovida em conjunto com a Sociedade Brasileira de Computação (SBC,
@@ -82,7 +104,7 @@
                             Informação na sociedade.
                         </p>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 text-center">
                         <figure class="figure">
                             <img src="static/images/exemple.svg" class="figure-img img-fluid rounded" alt="...">
                             <figcaption class="figure-caption text-center">Imagem rs</figcaption>
@@ -104,7 +126,7 @@
                             visibilidade a investigações relacionadas a esta realidade.
                         </p>
                     </div>
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 text-center">
                         <figure class="figure">
                             <img src="static/images/exemple.svg" class="figure-img img-fluid rounded" alt="...">
                             <figcaption class="figure-caption text-center">Imagem rs</figcaption>
@@ -278,6 +300,43 @@
             </div>
         </section>
         <!-- End Calls and Workshops Section -->
+        <!-- Registrations Section -->
+        <section class="py-5 bg-light" id="registrations">
+            <div class="container">
+                <div class="row align-items-center">
+                    <!-- Texto -->
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <h2 class="fw-bold">E aí, bora se inscrever?</h2>
+                        <p>
+                            Não fique de fora dessa experiência! Venha usufruir deste espaço de integração entre
+                            estudantes,
+                            pesquisadores e profissionais da área de computação.
+                        </p>
+                        <p>
+                            <a href="#" class="text-primary fw-semibold">Clique aqui</a> para saber mais.
+                        </p>
+                        <div class="text-center text-lg-start">
+                            <a href="#"">
+                                <button class="btn btn-dark btn-lg mt-3" type="button">
+                                    <i class="fas fa-user-plus"></i>
+                                    <span class="ms-2">Inscreva-se agora!</span>
+                                </button>
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Imagem -->
+                    <div class="col-lg-6 text-center">
+                        <figure class="figure">
+                            <img src="static/images/exemple.svg" class="figure-img img-fluid rounded" alt="...">
+                            <figcaption class="figure-caption text-center">Imagem rs</figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
 
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
