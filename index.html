@@ -18,11 +18,10 @@
 <body>
     <!-- Navbar -->
     <header class="fixed-top">
-        <nav class="navbar navbar-expand-md border-white border-bottom border-1">
+        <nav class="navbar navbar-expand-md border-bottom border-1">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="static/images/complete-logo.png" alt="Erbase Logo" width="140"
-                        class="d-inline-block align-text-top">
+                    <img src="static/images/complete-logo.png" alt="Erbase Logo" width="140" class="d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler border-0 p-0 m-0" type="button">
                     <label class="burger" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -34,12 +33,27 @@
                     </label>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav nav-underline d-flex align-items-center me-md-5">
-                        <a class="nav-link text-white" href="#home">Início</a>
-                        <a class="nav-link text-white" href="#about">Sobre</a>
-                        <a class="nav-link text-white" href="#calls">Chamadas</a>
-                        <a class="nav-link text-white" href="#schedule">Programação</a>
-                        <a class="nav-link text-white" href="#registrations">Inscrições</a>
+                    <div class="navbar-nav nav-underline d-flex align-items-center me-md-5 gap-3">
+                        <a class="nav-link text-white d-flex align-items-center" href="#home">
+                            <i class="fas fa-home me-2"></i>
+                            <span>Início</span>
+                        </a>
+                        <a class="nav-link text-white d-flex align-items-center" href="#about">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <span>Sobre</span>
+                        </a>
+                        <a class="nav-link text-white d-flex align-items-center" href="#calls">
+                            <i class="fas fa-bullhorn me-2"></i>
+                            <span>Chamadas</span>
+                        </a>
+                        <a class="nav-link text-white d-flex align-items-center" href="#schedule">
+                            <i class="fas fa-calendar-alt me-2"></i>
+                            <span>Programação</span>
+                        </a>
+                        <a class="nav-link text-white d-flex align-items-center" href="#registrations">
+                            <i class="fas fa-edit me-2"></i>
+                            <span>Inscrições</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -47,6 +61,9 @@
     </header>
     <!--End Navbar-->
     <main>
+        <!-- Invisible navbar -->
+         <div class="invisible-navbar"></div>
+        <!-- End invisible navbar -->
         <!-- Hero Section -->
         <section class="hero py-5 text-center" id="home">
             <div class="container text-center">

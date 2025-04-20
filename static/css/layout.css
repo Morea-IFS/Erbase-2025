@@ -5,8 +5,6 @@
 }
 
 body {
-    padding-top: 70px;
-    /* Adjusted for fixed navbar height */
     min-height: 100dvh;
     /* Use dynamic viewport height for better responsiveness */
 }
@@ -15,8 +13,13 @@ section {
     scroll-margin-top: 70px;
 }
 
+.invisible-navbar {
+    height: 70px;
+    background-color: black;
+}
+
 .navbar {
-    background-color: #29166F;
+    background-color: #000000e0;
     min-height: 70px;
 }
 
