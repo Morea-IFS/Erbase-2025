@@ -21,7 +21,8 @@
         <nav class="navbar navbar-expand-lg border-bottom border-1">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="static/images/complete-logo.png" alt="Erbase Logo" width="140" class="d-inline-block align-text-top">
+                    <img src="static/images/complete-logo.png" alt="Erbase Logo" width="140"
+                        class="d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler border-0 p-0 m-0" type="button">
                     <label class="burger" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
@@ -62,12 +63,12 @@
     <!--End Navbar-->
     <main>
         <!-- Invisible navbar -->
-         <div class="invisible-navbar"></div>
+        <div class="invisible-navbar"></div>
         <!-- End invisible navbar -->
         <!-- Hero Section -->
         <section class="hero py-5 text-center" id="home">
             <div class="container text-center">
-                <h1 class="display-2 mb-4"><strong>ERBASE 2025</strong></h1>
+                <h1 class="display-2 mb-4 text-center fw-bold"><strong>ERBASE 2025</strong></h1>
                 <p class="lead fs-5 text-center mb-4"><strong>XVIII ESCOLA REGIONAL DE COMPUTAÇÃO <br> BAHIA - ALAGOAS -
                         SERGIPE</strong></p>
                 <a href="#">
@@ -80,9 +81,9 @@
         </section>
         <!-- End Hero Section -->
         <!-- About Section -->
-        <section class="py-5" id="about">
+        <section class="py-5 bg-light" id="about">
             <div class="container">
-                <h2 class="text-center mb-5">Sobre o Evento</h2>
+                <h2 class="text-center mb-5 fw-bold">Sobre o Evento</h2>
 
                 <!-- Block 1 -->
                 <div class="row align-items-center mb-5">
@@ -137,9 +138,9 @@
         </section>
         <!-- End About Section -->
         <!-- Calls and Workshops Section -->
-        <section id="calls" class="py-5">
+        <section class="py-5 bg-light" id="calls">
             <div class="container">
-                <h2 class="text-center mb-5">Chamadas e Workshops</h2>
+                <h2 class="text-center mb-5 fw-bold">Chamadas e Workshops</h2>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
                     <!-- Card 1 -->
@@ -300,6 +301,126 @@
             </div>
         </section>
         <!-- End Calls and Workshops Section -->
+        <!-- Schedule Section -->
+        <section class="schedule-section py-5" id="schedule">
+            <h2 class="text-center mb-5 fw-bold">Programação</h2>
+
+            <div class="date-tabs">
+                <button class="date-tab active" data-day="day-1">31/02</button>
+                <button class="date-tab" data-day="day-2">01/03</button>
+                <button class="date-tab" data-day="day-3">02/03</button>
+            </div>
+
+            <div class="schedule-grid">
+                <table class="schedule-table">
+                    <thead>
+                        <tr>
+                            <th>Horários</th>
+                            <th>Auditório</th>
+                            <th>Mini Auditório</th>
+                            <th>Lab 2</th>
+                            <th>Lab 4</th>
+                            <th>Lab 6</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+
+                    <!-- Dia 31/02 -->
+                    <tbody class="schedule-body day-1">
+                        <tr>
+                            <td class="time-cell">08:00</td>
+                            <td>Palestra A</td> <!-- Auditório -->
+                            <td>Workshop Front-end</td> <!-- Mini Auditório -->
+                            <td>Curso Python</td> <!-- Lab 2 -->
+                            <td>Curso HTML CSS</td> <!-- Lab 4 -->
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="time-cell">09:00</td>
+                            <td></td>
+                            <td>Oficina UX</td>
+                            <td>Introdução a Programação Mobile</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="time-cell">10:00</td>
+                            <td>Palestra B</td> <!-- Auditório -->
+                            <td>Curso Java Spring</td> <!-- Mini Auditório -->
+                            <td></td> <!-- Lab 2 -->
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+
+                    <!-- Dia 01/03 -->
+                    <tbody class="schedule-body day-2">
+                        <tr>
+                            <td class="time-cell">08:00</td>
+                            <td>Palestra C</td> <!-- Auditório -->
+                            <td>Apresentaçâo de TCC</td> <!-- Mini Auditório -->
+                            <td>Curso Arduino</td> <!-- Lab 2 -->
+                            <td></td> <!-- Lab 4 -->
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="time-cell">09:00</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="time-cell">10:00</td>
+                            <td>Palestra B</td> <!-- Auditório -->
+                            <td>Curso Java Spring</td> <!-- Mini Auditório -->
+                            <td></td> <!-- Lab 2 -->
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+
+                    <!-- Dia 02/03 -->
+                    <tbody class="schedule-body day-3">
+                        <tr>
+                            <td class="time-cell">08:00</td>
+                            <td>Palestra D</td> <!-- Auditório -->
+                            <td></td> <!-- Mini Auditório -->
+                            <td>Conceitos de Redes</td> <!-- Lab 2 -->
+                            <td></td> <!-- Lab 4 -->
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="time-cell">09:00</td>
+                            <td></td>
+                            <td>Apresentaçâo de TCC</td><!-- Mini Auditório -->
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td class="time-cell">10:00</td>
+                            <td></td> <!-- Auditório -->
+                            <td></td> <!-- Mini Auditório -->
+                            <td></td> <!-- Lab 2 -->
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+        <!-- End Schedule Section -->
         <!-- Registrations Section -->
         <section class="py-5 bg-light" id="registrations">
             <div class="container">
@@ -317,14 +438,13 @@
                         </p>
                         <div class="text-center text-lg-start">
                             <a href="#"">
-                                <button class="btn btn-dark btn-lg mt-3" type="button">
+                                <button class=" btn btn-dark btn-lg mt-3" type="button">
                                     <i class="fas fa-user-plus"></i>
                                     <span class="ms-2">Inscreva-se agora!</span>
                                 </button>
                             </a>
                         </div>
                     </div>
-
                     <!-- Imagem -->
                     <div class="col-lg-6 text-center">
                         <figure class="figure">
@@ -332,12 +452,10 @@
                             <figcaption class="figure-caption text-center">Imagem rs</figcaption>
                         </figure>
                     </div>
+
                 </div>
             </div>
         </section>
-
-
-
     </main>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"

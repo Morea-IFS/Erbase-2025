@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -16,26 +17,29 @@ a {
 
 .hero {
     background-color: black;
-    height: calc(100dvh - 70px); /* Full height minus navbar height */
+    /* Full height minus navbar height */
+    height: calc(100dvh - 70px);
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
 }
 
+/* Calls and workspaces styles */
+
 .call-card {
-    background-color: #ddd; 
+    background-color: #ddd;
     border-radius: 10px;
     border: 1px solid #aaa;
     overflow: hidden;
-    height: 100%; 
+    height: 100%;
 }
 
-.black-stripe { 
+.black-stripe {
     width: 12px;
     background-color: #000;
-    min-height: 100%; 
-    flex-shrink: 0; 
+    min-height: 100%;
+    flex-shrink: 0;
 }
 
 .gray-avatar {
@@ -57,5 +61,75 @@ a {
 }
 
 .card-content {
-    flex-grow: 1; 
+    flex-grow: 1;
+}
+
+/* Schedule Styles */
+
+.schedule-section {
+    background-color: #e0e0e0;
+    padding-inline: 20px;
+    text-align: center;
+}
+
+.date-tabs {
+    display: flex;
+    justify-content: start;
+    gap: 5px;
+    margin-inline-start: 1em;
+    user-select: none;
+}
+
+.date-tab {
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 8px 8px 0 0;
+    padding: 8px 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.date-tab.active {
+    position: relative;
+    background-color: black;
+    color: white;
+    top: 7px;
+}
+
+.schedule-body {
+    display: none;
+}
+
+.schedule-grid {
+    position: relative;
+    z-index: 1;
+    overflow-x: auto;
+}
+
+.schedule-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #d9d9d9;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.schedule-table thead th {
+    background-color: #aaa;
+    padding: 10px;
+    border: 1px solid #333;
+}
+
+.schedule-table td,
+.schedule-table th {
+    border: 1px solid #333;
+    padding: 8px;
+    text-align: center;
+    min-width: 100px;
+}
+
+.time-cell {
+    background-color: #aaa;
+    font-weight: bold;
 }
