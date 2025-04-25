@@ -25,7 +25,7 @@ a {
     background-color: #4CAF50;
     margin: 0.5em auto;
     border-radius: 4px;
-  }
+}
 
 /* Hero Styles */
 
@@ -59,6 +59,22 @@ a {
     left: 3em;
     z-index: 1;
     height: 500px;
+}
+
+.hero-city {
+    position: absolute;
+    bottom: -10em;
+    left: 1%;
+    height: 20em;
+    filter: opacity(0.5);
+}
+
+.hero-state {
+    position: absolute;
+    bottom: 10em;
+    right: 1%;
+    height: 20em;
+    filter: opacity(0.5);
 }
 
 /* Calls and workspaces styles */
@@ -139,7 +155,7 @@ a {
     position: relative;
     z-index: 1;
     overflow-x: auto;
-    
+
 }
 
 .schedule-table {
@@ -179,11 +195,13 @@ a {
     font-weight: bold;
     color: white;
 }
+
 .event-2 {
     background-color: #29166D;
     font-weight: bold;
     color: white;
 }
+
 .event-3 {
     background-color: #F6C303;
     font-weight: bold;
@@ -192,7 +210,7 @@ a {
 
 @media (max-width: 576px) {
 
-    .logo-hero{
+    .logo-hero {
         position: static;
         margin-bottom: 6em;
         height: 200px;
@@ -204,6 +222,16 @@ a {
 
     .robot-hand {
         display: none;
+    }
+
+    .hero-city {
+        height: 15em;
+        bottom: -9em;
+    }
+
+    .hero-state {
+        height: 15em;
+        bottom: 21em;
     }
 
 }
