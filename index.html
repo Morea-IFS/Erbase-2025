@@ -21,7 +21,7 @@
         <nav class="navbar navbar-expand-lg border-bottom border-1">
             <div class="container-fluid">
                 <a class="navbar-brand" href="#">
-                    <img src="static/images/complete-logo.png" alt="Erbase Logo" width="140"
+                    <img src="static/images/logo-navbar.svg" alt="Erbase Logo" width="90"
                         class="d-inline-block align-text-top">
                 </a>
                 <button class="navbar-toggler border-0 p-0 m-0" type="button">
@@ -34,24 +34,24 @@
                     </label>
                 </button>
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav nav-underline d-flex align-items-center me-lg-5 gap-3">
-                        <a class="nav-link text-white d-flex align-items-center" href="#home">
+                    <div class="navbar-nav d-flex align-items-center me-lg-5 gap-3">
+                        <a class="nav-link d-flex align-items-center" href="#home">
                             <i class="fas fa-home me-2"></i>
                             <span>Início</span>
                         </a>
-                        <a class="nav-link text-white d-flex align-items-center" href="#about">
+                        <a class="nav-link d-flex align-items-center" href="#about">
                             <i class="fas fa-info-circle me-2"></i>
                             <span>Sobre</span>
                         </a>
-                        <a class="nav-link text-white d-flex align-items-center" href="#calls">
+                        <a class="nav-link d-flex align-items-center" href="#calls">
                             <i class="fas fa-bullhorn me-2"></i>
                             <span>Chamadas</span>
                         </a>
-                        <a class="nav-link text-white d-flex align-items-center" href="#schedule">
+                        <a class="nav-link d-flex align-items-center" href="#schedule">
                             <i class="fas fa-calendar-alt me-2"></i>
                             <span>Programação</span>
                         </a>
-                        <a class="nav-link text-white d-flex align-items-center" href="#registrations">
+                        <a class="nav-link d-flex align-items-center" href="#registrations">
                             <i class="fas fa-edit me-2"></i>
                             <span>Inscrições</span>
                         </a>
@@ -67,56 +67,52 @@
         <!-- End invisible navbar -->
         <!-- Hero Section -->
         <section class="hero py-5 text-center" id="home">
-            <div class="container text-center">
-                <h1 class="display-2 mb-4 text-center fw-bold"><strong>ERBASE 2025</strong></h1>
-                <p class="lead fs-5 text-center mb-4"><strong>XVIII ESCOLA REGIONAL DE COMPUTAÇÃO <br> BAHIA - ALAGOAS -
-                        SERGIPE</strong></p>
-                <a href="#">
-                    <button class="btn btn-primary btn-lg mt-3" type="button">
+            <div class="container text-center d-flex flex-column justify-content-center align-items-center">
+                <img src="static/images/logo-hero.png " alt="Erbase Logo" class="logo-hero">
+                <a href="#" class="button-hero-link">
+                    <button class="btn btn-warning btn-lg mt-3 text-white" type="button">
                         <i class="fas fa-user-plus"></i>
                         <span class="ms-2">Inscreva-se agora!</span>
                     </button>
                 </a>
+                <img src="static/images/robot-hand.png" alt="Erbase Logo" class="robot-hand">
             </div>
         </section>
         <!-- End Hero Section -->
         <!-- About Section -->
-        <section class="py-5 bg-light" id="about">
+        <section class="py-5 bg-light" id="about" style="position: relative; z-index: 1;">
             <div class="container">
-                <h2 class="text-center mb-5 fw-bold">Sobre o Evento</h2>
+                <h2 class="title text-center mb-5 fw-bold display-6">Sobre o evento</h2>
 
                 <!-- Block 1 -->
                 <div class="row align-items-center mb-5">
-                    <div class="col-lg-6 mb-4">
-                        <p class="small-label">(Parte que fala do evento em si)</p>
+                    <div class="col-lg-7">
                         <p>
-                            A ERBASE é promovida em conjunto com a Sociedade Brasileira de Computação (SBC,
-                            <a href="http://www.sbc.org.br" target="_blank">http://www.sbc.org.br</a>),
-                            uma das maiores sociedades científicas do país de atuação diversa em questões nacionais
-                            relativas à informática. Sua organização se dá por um comitê composto por representantes
-                            institucionais da SBC em Instituições de Ensino Superior (IES) que tenham cursos de
-                            computação e informática dos referidos Estados. Historicamente a ERBASE tem atraído um
-                            número cada vez maior de participantes: inscritos e ministrantes. Isto se deve ao sucesso
-                            das edições passadas, nas quais o evento foi evoluindo e agregando cada vez mais formas de
-                            interação entre seus participantes. A possibilidade de confrontar os problemas e soluções
-                            existentes na região de Bahia, Alagoas e Sergipe frente às questões correspondentes no
-                            âmbito nacional e mundial torna a ERBASE um fórum ideal também para discutir a melhoria das
-                            políticas públicas, institucionais e educacionais relacionadas à aplicação da Tecnologia da
-                            Informação na sociedade.
+                            A ERBASE é promovida em conjunto com a Sociedade Brasileira de Computação
+                            (SBC, <a href="http://www.sbc.org.br">http://www.sbc.org.br</a>), uma das maiores sociedades
+                            científicas do país de atuação
+                            diversa em questões nacionais relativas à informática. Sua organização se dá por um comitê
+                            composto por representantes institucionais da SBC em Instituições de Ensino Superior (IES)
+                            que tenham cursos de computação e informática dos referidos Estados.
+                            Historicamente a ERBASE tem atraído um número cada vez maior de participantes: inscritos e
+                            ministrantes. Isto se deve ao sucesso das edições passadas, nas quais o evento foi evoluindo
+                            e agregando cada vez mais formas de interação entre seus participantes. A possibilidade de
+                            confrontar os problemas e soluções existentes na região de Bahia, Alagoas e Sergipe frente
+                            às questões correspondentes no âmbito nacional e mundial torna a ERBASE um fórum ideal
+                            também para discutir a melhoria das políticas públicas, institucionais e educacionais
+                            relacionadas à aplicação da Tecnologia da Informação na sociedade.
                         </p>
                     </div>
-                    <div class="col-lg-6 text-center">
+                    <div class="col-lg-5 text-center">
                         <figure class="figure">
-                            <img src="static/images/exemple.svg" class="figure-img img-fluid rounded" alt="...">
-                            <figcaption class="figure-caption text-center">Imagem rs</figcaption>
+                            <img src="static/images/region.svg" class="figure-img img-fluid rounded" alt="...">
                         </figure>
                     </div>
                 </div>
 
                 <!-- Block 2 -->
                 <div class="row align-items-center flex-lg-row-reverse">
-                    <div class="col-lg-6">
-                        <p>(Parte que fala da relação do local com o evento)</p>
+                    <div class="col-lg-7">
                         <p>
                             A promoção do evento é da Sociedade Brasileira de Computação (SBC) e, em 2018, a cidade de
                             Aracaju voltará a sediar a ERBASE, sob organização do Instituto Federal de Sergipe, com
@@ -127,10 +123,9 @@
                             visibilidade a investigações relacionadas a esta realidade.
                         </p>
                     </div>
-                    <div class="col-lg-6 text-center">
+                    <div class="col-lg-5 text-center">
                         <figure class="figure">
-                            <img src="static/images/exemple.svg" class="figure-img img-fluid rounded" alt="...">
-                            <figcaption class="figure-caption text-center">Imagem rs</figcaption>
+                            <img src="static/images/city.svg" class="figure-img img-fluid rounded" alt="...">
                         </figure>
                     </div>
                 </div>
@@ -140,23 +135,25 @@
         <!-- Calls and Workshops Section -->
         <section class="py-5 bg-light" id="calls">
             <div class="container">
-                <h2 class="text-center mb-5 fw-bold">Chamadas e Workshops</h2>
+                <h2 class="title text-center mb-5 fw-bold display-6">Chamadas e Workshops</h2>
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
 
                     <!-- Card 1 -->
                     <div class="col">
                         <div class="card call-card position-relative">
                             <div class="card-body d-flex p-0 align-items-stretch">
-                                <div class="black-stripe"></div>
+                                <div class="black-stripe" style="background-color: #277E13;"></div>
                                 <div class="card-content d-flex flex-column flex-grow-1 p-3">
                                     <div class="d-flex justify-content-between align-items-start">
-                                        <div class="gray-avatar"></div>
-                                        <a href="#" class="icon-link">
+                                        <div class="mb-2">
+                                            <img src="static/images/microscope.svg" alt="PesqBase Logo" width="75">
+                                        </div>
+                                        <a href="#" class="icon-link" style="color: #277E13;">
                                             <i class="fas fa-external-link-alt"></i>
                                         </a>
                                     </div>
-                                    <h5 class="fw-bold mt-2 mb-1">Chamada</h5>
-                                    <p class="mb-0 small">
+                                    <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #277E13;">PesqBase</h5>
+                                    <p class="mb-0 small fs-6" style="color: #277E13;">
                                         Workshop de Trabalhos de Pesquisa (Projetos de Pesquisa, Iniciação Científica,
                                         TCC - Trabalho de Conclusão de Curso)
                                     </p>
@@ -169,16 +166,18 @@
                     <div class="col">
                         <div class="card call-card position-relative">
                             <div class="card-body d-flex p-0 align-items-stretch">
-                                <div class="black-stripe"></div>
+                                <div class="black-stripe" style="background-color: #29166D;"></div>
                                 <div class="card-content d-flex flex-column flex-grow-1 p-3">
                                     <div class="d-flex justify-content-between align-items-start">
-                                        <div class="gray-avatar"></div>
-                                        <a href="#" class="icon-link">
+                                        <div class="mb-2">
+                                            <img src="static/images/education.svg" alt="WeiBase Logo" width="75">
+                                        </div>
+                                        <a href="#" class="icon-link" style="color: #29166D;">
                                             <i class="fas fa-external-link-alt"></i>
                                         </a>
                                     </div>
-                                    <h5 class="fw-bold mt-2 mb-1">Chamada</h5>
-                                    <p class="mb-0 small">
+                                    <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #29166D;">WeiBase</h5>
+                                    <p class="mb-0 small fs-6" style="color: #29166D;">
                                         Workshop de Trabalhos de Pesquisa (Projetos de Pesquisa, Iniciação Científica,
                                         TCC - Trabalho de Conclusão de Curso)
                                     </p>
@@ -191,16 +190,18 @@
                     <div class="col">
                         <div class="card call-card position-relative">
                             <div class="card-body d-flex p-0 align-items-stretch">
-                                <div class="black-stripe"></div>
+                                <div class="black-stripe" style="background-color: #484848;"></div>
                                 <div class="card-content d-flex flex-column flex-grow-1 p-3">
                                     <div class="d-flex justify-content-between align-items-start">
-                                        <div class="gray-avatar"></div>
-                                        <a href="#" class="icon-link">
+                                        <div class="mb-2">
+                                            <img src="static/images/robotic-arms.svg" alt="XBase Logo" width="75">
+                                        </div>
+                                        <a href="#" class="icon-link" style="color: #484848;">
                                             <i class="fas fa-external-link-alt"></i>
                                         </a>
                                     </div>
-                                    <h5 class="fw-bold mt-2 mb-1">Chamada</h5>
-                                    <p class="mb-0 small">
+                                    <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #484848;">XBase</h5>
+                                    <p class="mb-0 small fs-6" style="color: #484848;">
                                         Workshop de Trabalhos de Pesquisa (Projetos de Pesquisa, Iniciação Científica,
                                         TCC - Trabalho de Conclusão de Curso)
                                     </p>
@@ -216,13 +217,15 @@
                                 <div class="black-stripe"></div>
                                 <div class="card-content d-flex flex-column flex-grow-1 p-3">
                                     <div class="d-flex justify-content-between align-items-start">
-                                        <div class="gray-avatar"></div>
+                                        <div class="mb-2">
+                                            <img src="static/images/developer.svg" alt="ProgBase Logo" width="75">
+                                        </div>
                                         <a href="#" class="icon-link">
                                             <i class="fas fa-external-link-alt"></i>
                                         </a>
                                     </div>
-                                    <h5 class="fw-bold mt-2 mb-1">Chamada</h5>
-                                    <p class="mb-0 small">
+                                    <h5 class="fw-bold mt-2 mb-1 fs-4">ProgBase</h5>
+                                    <p class="mb-0 small fs-6">
                                         Workshop de Trabalhos de Pesquisa (Projetos de Pesquisa, Iniciação Científica,
                                         TCC - Trabalho de Conclusão de Curso)
                                     </p>
@@ -235,16 +238,18 @@
                     <div class="col">
                         <div class="card call-card position-relative">
                             <div class="card-body d-flex p-0 align-items-stretch">
-                                <div class="black-stripe"></div>
+                                <div class="black-stripe" style="background-color: #277E13;"></div>
                                 <div class="card-content d-flex flex-column flex-grow-1 p-3">
                                     <div class="d-flex justify-content-between align-items-start">
-                                        <div class="gray-avatar"></div>
-                                        <a href="#" class="icon-link">
+                                        <div class="mb-2">
+                                            <img src="static/images/robotic-dog.svg" alt="RoboBase Logo" width="75">
+                                        </div>
+                                        <a href="#" class="icon-link" style="color: #277E13;">
                                             <i class="fas fa-external-link-alt"></i>
                                         </a>
                                     </div>
-                                    <h5 class="fw-bold mt-2 mb-1">Chamada</h5>
-                                    <p class="mb-0 small">
+                                    <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #277E13;">RoboBase</h5>
+                                    <p class="mb-0 small fs-6" style="color: #277E13;">
                                         Workshop de Trabalhos de Pesquisa (Projetos de Pesquisa, Iniciação Científica,
                                         TCC - Trabalho de Conclusão de Curso)
                                     </p>
@@ -257,16 +262,18 @@
                     <div class="col">
                         <div class="card call-card position-relative">
                             <div class="card-body d-flex p-0 align-items-stretch">
-                                <div class="black-stripe"></div>
+                                <div class="black-stripe" style="background-color: #29166D;"></div>
                                 <div class="card-content d-flex flex-column flex-grow-1 p-3">
                                     <div class="d-flex justify-content-between align-items-start">
-                                        <div class="gray-avatar"></div>
-                                        <a href="#" class="icon-link">
+                                        <div class="mb-2">
+                                            <img src="static/images/mouse.svg" alt="MiniCursos Logo" width="75">
+                                        </div>
+                                        <a href="#" class="icon-link" style="color: #29166D;">
                                             <i class="fas fa-external-link-alt"></i>
                                         </a>
                                     </div>
-                                    <h5 class="fw-bold mt-2 mb-1">Chamada</h5>
-                                    <p class="mb-0 small">
+                                    <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #29166D;">MiniCursos</h5>
+                                    <p class="mb-0 small fs-6" style="color: #29166D;">
                                         Workshop de Trabalhos de Pesquisa (Projetos de Pesquisa, Iniciação Científica,
                                         TCC - Trabalho de Conclusão de Curso)
                                     </p>
@@ -279,16 +286,18 @@
                     <div class="col">
                         <div class="card call-card position-relative">
                             <div class="card-body d-flex p-0 align-items-stretch">
-                                <div class="black-stripe"></div>
+                                <div class="black-stripe" style="background-color: #484848;"></div>
                                 <div class="card-content d-flex flex-column flex-grow-1 p-3">
                                     <div class="d-flex justify-content-between align-items-start">
-                                        <div class="gray-avatar"></div>
-                                        <a href="#" class="icon-link">
+                                        <div class="mb-2">
+                                            <img src="static/images/girl.svg" alt="Meninas Digitais Logo" width="75">
+                                        </div>
+                                        <a href="#" class="icon-link" style="color: #484848;">
                                             <i class="fas fa-external-link-alt"></i>
                                         </a>
                                     </div>
-                                    <h5 class="fw-bold mt-2 mb-1">Chamada</h5>
-                                    <p class="mb-0 small">
+                                    <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #484848;">Meninas Digitais</h5>
+                                    <p class="mb-0 small fs-6" style="color: #484848;">
                                         Workshop de Trabalhos de Pesquisa (Projetos de Pesquisa, Iniciação Científica,
                                         TCC - Trabalho de Conclusão de Curso)
                                     </p>
@@ -302,145 +311,155 @@
         </section>
         <!-- End Calls and Workshops Section -->
         <!-- Schedule Section -->
-        <section class="schedule-section py-5" id="schedule">
-            <h2 class="text-center mb-5 fw-bold">Programação</h2>
+        <section class="schedule-section py-5 bg-light" id="schedule">
+            <div class="container">
+                <h2 class="title text-center mb-5 fw-bold display-6">Programação</h2>
 
-            <div class="date-tabs">
-                <button class="date-tab active" data-day="day-1">31/02</button>
-                <button class="date-tab" data-day="day-2">01/03</button>
-                <button class="date-tab" data-day="day-3">02/03</button>
-            </div>
+                <div class="date-tabs">
+                    <button class="date-tab active" style="background-color: #29166D;" data-day="day-1">31/02</button>
+                    <button class="date-tab" style="background-color: #F6C303;" data-day="day-2">01/03</button>
+                    <button class="date-tab" style="background-color: #277E13;" data-day="day-3">02/03</button>
+                </div>
 
-            <div class="schedule-grid">
-                <table class="schedule-table">
-                    <thead>
-                        <tr>
-                            <th>Horários</th>
-                            <th>Auditório</th>
-                            <th>Mini Auditório</th>
-                            <th>Lab 2</th>
-                            <th>Lab 4</th>
-                            <th>Lab 6</th>
-                            <th></th>
-                        </tr>
-                    </thead>
+                <div class="schedule-grid">
+                    <table class="schedule-table">
+                        <thead>
+                            <tr>
+                                <th>Horários</th>
+                                <th>Auditório</th>
+                                <th>Mini Auditório</th>
+                                <th>Lab 2</th>
+                                <th>Lab 4</th>
+                                <th>Lab 6</th>
+                                <th>Coinf</th>
+                            </tr>
+                        </thead>
 
-                    <!-- Dia 31/02 -->
-                    <tbody class="schedule-body day-1">
-                        <tr>
-                            <td class="time-cell">08:00</td>
-                            <td>Palestra A</td> <!-- Auditório -->
-                            <td>Workshop Front-end</td> <!-- Mini Auditório -->
-                            <td>Curso Python</td> <!-- Lab 2 -->
-                            <td>Curso HTML CSS</td> <!-- Lab 4 -->
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="time-cell">09:00</td>
-                            <td></td>
-                            <td>Oficina UX</td>
-                            <td>Introdução a Programação Mobile</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="time-cell">10:00</td>
-                            <td>Palestra B</td> <!-- Auditório -->
-                            <td>Curso Java Spring</td> <!-- Mini Auditório -->
-                            <td></td> <!-- Lab 2 -->
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
+                        <!-- Dia 31/02 -->
+                        <tbody class="schedule-body day-1">
+                            <tr>
+                                <td class="time-cell">08:00</td>
+                                <td class="event-3">Palestra A</td> <!-- Auditório -->
+                                <td class="event-1" rowspan="2">Workshop Front-end</td> <!-- Mini Auditório -->
+                                <td class="event-2">Curso Python</td> <!-- Lab 2 -->
+                                <td class="event-1">Curso HTML CSS</td> <!-- Lab 4 -->
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time-cell">09:00</td>
+                                <td></td>
+                                <td></td>
+                                <td class="event-2">Introdução a Programação Mobile</td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time-cell">10:00</td>
+                                <td class="event-3">Palestra B</td> <!-- Auditório -->
+                                <td class="event-1">Curso Java Spring</td> <!-- Mini Auditório -->
+                                <td></td> <!-- Lab 2 -->
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
 
-                    <!-- Dia 01/03 -->
-                    <tbody class="schedule-body day-2">
-                        <tr>
-                            <td class="time-cell">08:00</td>
-                            <td>Palestra C</td> <!-- Auditório -->
-                            <td>Apresentaçâo de TCC</td> <!-- Mini Auditório -->
-                            <td>Curso Arduino</td> <!-- Lab 2 -->
-                            <td></td> <!-- Lab 4 -->
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="time-cell">09:00</td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="time-cell">10:00</td>
-                            <td>Palestra B</td> <!-- Auditório -->
-                            <td>Curso Java Spring</td> <!-- Mini Auditório -->
-                            <td></td> <!-- Lab 2 -->
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
+                        <!-- Dia 01/03 -->
+                        <tbody class="schedule-body day-2">
+                            <tr>
+                                <td class="time-cell">08:00</td>
+                                <td class="event-3">Palestra C</td> <!-- Auditório -->
+                                <td class="event-1">Apresentaçâo de TCC</td> <!-- Mini Auditório -->
+                                <td class="event-2">Curso Arduino</td> <!-- Lab 2 -->
+                                <td></td> <!-- Lab 4 -->
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time-cell">09:00</td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time-cell">10:00</td>
+                                <td class="event-2">Palestra B</td> <!-- Auditório -->
+                                <td class="event-1">Curso Java Spring</td> <!-- Mini Auditório -->
+                                <td></td> <!-- Lab 2 -->
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
 
-                    <!-- Dia 02/03 -->
-                    <tbody class="schedule-body day-3">
-                        <tr>
-                            <td class="time-cell">08:00</td>
-                            <td>Palestra D</td> <!-- Auditório -->
-                            <td></td> <!-- Mini Auditório -->
-                            <td>Conceitos de Redes</td> <!-- Lab 2 -->
-                            <td></td> <!-- Lab 4 -->
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="time-cell">09:00</td>
-                            <td></td>
-                            <td>Apresentaçâo de TCC</td><!-- Mini Auditório -->
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td class="time-cell">10:00</td>
-                            <td></td> <!-- Auditório -->
-                            <td></td> <!-- Mini Auditório -->
-                            <td></td> <!-- Lab 2 -->
-                            <td></td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
+                        <!-- Dia 02/03 -->
+                        <tbody class="schedule-body day-3">
+                            <tr>
+                                <td class="time-cell">08:00</td>
+                                <td class="event-3">Palestra D</td> <!-- Auditório -->
+                                <td></td> <!-- Mini Auditório -->
+                                <td class="event-3">Conceitos de Redes</td> <!-- Lab 2 -->
+                                <td></td> <!-- Lab 4 -->
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time-cell">09:00</td>
+                                <td></td>
+                                <td class="event-2">Apresentação de TCC</td><!-- Mini Auditório -->
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                            <tr>
+                                <td class="time-cell">10:00</td>
+                                <td></td> <!-- Auditório -->
+                                <td></td> <!-- Mini Auditório -->
+                                <td></td> <!-- Lab 2 -->
+                                <td></td>
+                                <td></td>
+                                <td></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </section>
         <!-- End Schedule Section -->
         <!-- Registrations Section -->
-        <section class="py-5 bg-light" id="registrations">
+        <section class="bg-light" id="registrations" style="padding: 5em 0 5em 0;">
             <div class="container">
                 <div class="row align-items-center">
                     <!-- Texto -->
-                    <div class="col-lg-6 mb-4 mb-lg-0">
-                        <h2 class="fw-bold">E aí, bora se inscrever?</h2>
-                        <p>
+                    <div class="col-lg-6 mb-5 mb-lg-0">
+                        <h2 class="fw-bold display-6" style="color: #29166D;">
+                            E aí, bora se inscrever?
+                            <div style="display: block;
+                            width: 200px;
+                            height: 7px;
+                            background-color: #4CAF50;
+                            margin: 0.5em 0;
+                            border-radius: 4px;">
+                            </div>
+                        </h2>
+                        <p class="lead">
                             Não fique de fora dessa experiência! Venha usufruir deste espaço de integração entre
                             estudantes,
                             pesquisadores e profissionais da área de computação.
                         </p>
                         <p>
-                            <a href="#" class="text-primary fw-semibold">Clique aqui</a> para saber mais.
+                            <a href="#" class="text-primary fw-semibold text-success">Clique aqui</a> e faça a sua
                         </p>
                         <div class="text-center text-lg-start">
                             <a href="#"">
-                                <button class=" btn btn-dark btn-lg mt-3" type="button">
-                                    <i class="fas fa-user-plus"></i>
-                                    <span class="ms-2">Inscreva-se agora!</span>
+                                <button class=" btn btn-warning text-white btn-lg mt-3" type="button">
+                                <i class="fas fa-user-plus"></i>
+                                <span class="ms-2">Inscreva-se agora!</span>
                                 </button>
                             </a>
                         </div>
@@ -448,8 +467,7 @@
                     <!-- Imagem -->
                     <div class="col-lg-6 text-center">
                         <figure class="figure">
-                            <img src="static/images/exemple.svg" class="figure-img img-fluid rounded" alt="...">
-                            <figcaption class="figure-caption text-center">Imagem rs</figcaption>
+                            <img src="static/images/lamp.svg" class="figure-img img-fluid rounded" alt="...">
                         </figure>
                     </div>
 
@@ -458,7 +476,7 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer class="bg-dark text-light py-5">
+    <footer class="bg-dark text-light py-5" style="border-radius: 1em 1em 0 0;">
         <div class="container">
             <div class="row text-center text-md-start align-items-center">
 

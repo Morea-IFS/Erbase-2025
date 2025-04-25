@@ -13,16 +13,52 @@ a {
     text-decoration: none;
 }
 
+.title {
+    color: #29166D
+}
+
+.title::after {
+    content: "";
+    display: block;
+    width: 130px;
+    height: 7px;
+    background-color: #4CAF50;
+    margin: 0.5em auto;
+    border-radius: 4px;
+  }
+
 /* Hero Styles */
 
 .hero {
-    background-color: black;
+    background-color: #271C57;
     /* Full height minus navbar height */
-    height: calc(100dvh - 70px);
+    height: 44em;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
+}
+
+.logo-hero {
+    position: relative;
+    top: 6.5em;
+    z-index: 1;
+    height: 250px;
+    margin-bottom: 3em;
+}
+
+.button-hero-link {
+    position: absolute;
+    z-index: 2;
+    top: 25em;
+}
+
+.robot-hand {
+    position: relative;
+    top: 2em;
+    left: 3em;
+    z-index: 1;
+    height: 500px;
 }
 
 /* Calls and workspaces styles */
@@ -33,56 +69,56 @@ a {
     border: 1px solid #aaa;
     overflow: hidden;
     height: 100%;
+    min-height: 15em;
 }
 
 .black-stripe {
-    width: 12px;
+    width: 1em;
     background-color: #000;
     min-height: 100%;
     flex-shrink: 0;
 }
 
-.gray-avatar {
-    width: 40px;
-    height: 40px;
-    background-color: #999;
-    border-radius: 50%;
-}
 
 .icon-link {
-    font-size: 1rem;
-    color: #000;
+    font-size: 1.2rem;
+    color: black;
     text-decoration: none;
     transition: color 0.2s ease-in-out;
 }
 
 .icon-link:hover {
-    color: #007bff;
+    color: #007bff !important;
 }
 
 .card-content {
     flex-grow: 1;
+    gap: 0.5em;
 }
 
 /* Schedule Styles */
 
 .schedule-section {
-    background-color: #e0e0e0;
     padding-inline: 20px;
     text-align: center;
 }
 
 .date-tabs {
+    position: relative;
+    left: 1em;
     display: flex;
     justify-content: start;
     gap: 5px;
     margin-inline-start: 1em;
     user-select: none;
+    max-width: 130em;
+    width: calc(100% - 1em);
+    margin: 0 auto;
 }
 
 .date-tab {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     border: none;
     border-radius: 8px 8px 0 0;
     padding: 8px 16px;
@@ -92,8 +128,6 @@ a {
 
 .date-tab.active {
     position: relative;
-    background-color: black;
-    color: white;
     top: 7px;
 }
 
@@ -105,31 +139,71 @@ a {
     position: relative;
     z-index: 1;
     overflow-x: auto;
+    
 }
 
 .schedule-table {
+    max-width: 130em;
     width: 100%;
     border-collapse: collapse;
-    background-color: #d9d9d9;
-    border-radius: 12px;
+    background-color: #f1eefa;
+    border-radius: 5px;
     overflow: hidden;
+    color: #29166D;
+    margin: 0 auto;
 }
 
 .schedule-table thead th {
-    background-color: #aaa;
     padding: 10px;
-    border: 1px solid #333;
+    border: 2px solid #333;
+    color: #29166D !important;
 }
 
 .schedule-table td,
 .schedule-table th {
-    border: 1px solid #333;
+    border: 2px solid #333;
     padding: 8px;
     text-align: center;
-    min-width: 100px;
+    height: 5em;
+    min-width: 7em;
+    color: white;
 }
 
 .time-cell {
-    background-color: #aaa;
     font-weight: bold;
+    color: #29166D !important;
+}
+
+.event-1 {
+    background-color: #277E13;
+    font-weight: bold;
+    color: white;
+}
+.event-2 {
+    background-color: #29166D;
+    font-weight: bold;
+    color: white;
+}
+.event-3 {
+    background-color: #F6C303;
+    font-weight: bold;
+    color: white;
+}
+
+@media (max-width: 576px) {
+
+    .logo-hero{
+        position: static;
+        margin-bottom: 6em;
+        height: 200px;
+    }
+
+    .button-hero-link {
+        position: static;
+    }
+
+    .robot-hand {
+        display: none;
+    }
+
 }

@@ -6,7 +6,7 @@
 
 body {
     /* Full height of the viewport */
-    min-height: 100dvh;
+    min-height: 100dvh
 }
 
 section {
@@ -15,12 +15,13 @@ section {
 
 .invisible-navbar {
     height: 70px;
-    background-color: black;
+    background-color: #271C57;
 }
 
 .navbar {
-    background-color: #000000e0;
+    background-color: #29166df7;
     min-height: 70px;
+    border-radius: 0 0 1em 1em;
 }
 
 .navbar-toggler:focus {
@@ -28,6 +29,24 @@ section {
     outline: none;
     /* Remove box shadow */
     box-shadow: none;
+}
+
+.nav-link {
+    color: #ffc107;
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.nav-link.active {
+    background-color: #ffc107;
+    color: #1a0a6e !important;
+    border-radius: 25px;
+    padding: 5px 15px;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    transform: scale(1.05);
 }
 
 /* Burguer menu styles */
@@ -79,30 +98,4 @@ section {
 .burger input:checked~span:nth-child(4) {
     transform: rotate(-45deg);
     top: 10px;
-}
-
-.navbar-nav {
-    position: relative;
-}
-
-.navbar-underline-indicator {
-    position: absolute;
-    bottom: 0;
-    height: 2px;
-    background-color: #fff;
-    transition: all 0.3s ease;
-    border-radius: 1px;
-    z-index: 1;
-    /* Make sure it starts at the left edge */
-    left: 0;
-    /* Initial width is 0 */
-    width: 0;
-}
-
-@media (max-width: 768px) {
-
-    .navbar-underline-indicator {
-        /* Hide the indicator on mobile */
-        display: none;
-    }
 }
