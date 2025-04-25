@@ -1,33 +1,30 @@
-// Active script for the navbar
-// This script will add an underline indicator to the active link in the navbar
-// and update it on scroll and resize events.
 document.addEventListener("DOMContentLoaded", () => {
 	const nav = document.querySelector(".navbar-nav");
 	const links = Array.from(nav.querySelectorAll(".nav-link"));
-	const indicator = document.createElement("div");
-	indicator.classList.add("navbar-underline-indicator");
-	nav.appendChild(indicator);
 
-	const moveIndicator = (link) => {
-		const { width, left } = link.getBoundingClientRect();
-		const { left: navLeft } = nav.getBoundingClientRect();
-		indicator.style.width = `${width}px`;
-		indicator.style.left = `${left - navLeft}px`;
-	};
-
+	// Function to set the active class and style
 	const setActive = (link) => {
 		if (!link || link.classList.contains("active")) return;
-		links.forEach((l) => l.classList.remove("active"));
-		link.classList.add("active");
-		moveIndicator(link);
+
+		// Remove active styles from all links
+		links.forEach((l) => {
+			l.classList.remove("active", "bg-warning", "rounded-pill");
+			l.classList.add("text-warning");
+		});
+
+		// Apply active styles to the clicked/visible link
+		link.classList.add("active", "bg-warning", "rounded-pill");
+		link.classList.remove("text-warning");
 	};
 
+	// Function to update active link based on scroll position
 	const updateActiveLinkByScroll = () => {
 		let activated = false;
 
-		// check each section to see if it's in the viewport
 		for (const link of links) {
 			const section = document.querySelector(link.getAttribute("href"));
+			if (!section) continue;
+
 			const { top, bottom } = section.getBoundingClientRect();
 			if (top <= 200 && bottom > 200) {
 				setActive(link);
@@ -36,26 +33,34 @@ document.addEventListener("DOMContentLoaded", () => {
 			}
 		}
 
-		// if no section is found, set the last active link or default to home
+		// If no section is active, default to the first or last active link
 		if (!activated) {
 			const lastActive = nav.querySelector('.nav-link.active');
-			setActive(lastActive || nav.querySelector('.nav-link[href="#home"]'));
+			setActive(lastActive || nav.querySelector('.nav-link'));
 		}
 	};
 
+	// Initial check on page load
 	updateActiveLinkByScroll();
 
-	// update the active link on scroll and resize events
+	// Update on scroll and resize
 	window.addEventListener("scroll", updateActiveLinkByScroll);
-	window.addEventListener("resize", () => {
-		const activeLink = nav.querySelector(".nav-link.active");
-		if (activeLink) moveIndicator(activeLink);
-	});
+	window.addEventListener("resize", updateActiveLinkByScroll);
 
-	// add click event listeners to each link to update the active link on click
+	// On link click: scroll smoothly and set active
 	links.forEach((link) => {
-		link.addEventListener("click", () => {
-			setTimeout(updateActiveLinkByScroll, 100);
+		link.addEventListener("click", (e) => {
+			e.preventDefault(); // Prevent default jump
+
+			const section = document.querySelector(link.getAttribute("href"));
+			if (section) {
+				window.scrollTo({
+					top: section.offsetTop - 60,
+					behavior: "smooth",
+				});
+			}
+
+			setActive(link);
 		});
 	});
 });
