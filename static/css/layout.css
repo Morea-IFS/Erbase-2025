@@ -19,7 +19,8 @@ section {
 }
 
 .navbar {
-    background-color: #29166df7;
+    /*gradient navbar background*/
+    background: linear-gradient(to right, rgb(39, 28, 87) 0%, rgba(65, 43, 143, 0.895) 50%, rgb(39, 28, 87) 100%);
     min-height: 70px;
     border-radius: 0 0 1em 1em;
 }
