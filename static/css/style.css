@@ -28,10 +28,8 @@ a {
 }
 
 /* Hero Styles */
-
 .hero {
     background-color: #271C57;
-    /* Full height minus navbar height */
     height: 44em;
     display: flex;
     justify-content: center;
@@ -45,6 +43,7 @@ a {
     z-index: 1;
     height: 250px;
     margin-bottom: 3em;
+    user-select: none;
 }
 
 .button-hero-link {
@@ -59,22 +58,25 @@ a {
     left: 3em;
     z-index: 1;
     height: 500px;
+    user-select: none;
 }
 
 .hero-city {
     position: absolute;
-    bottom: -10em;
-    left: 1%;
+    bottom: -1em;
+    left: 0;
     height: 20em;
     filter: opacity(0.5);
+    user-select: none;
 }
 
 .hero-state {
     position: absolute;
-    bottom: 10em;
-    right: 1%;
+    bottom: 25em;
+    right: 0;
     height: 20em;
     filter: opacity(0.5);
+    user-select: none;
 }
 
 /* Calls and workspaces styles */
@@ -86,6 +88,13 @@ a {
     overflow: hidden;
     height: 100%;
     min-height: 15em;
+    transform: translateY(20px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.call-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
 .black-stripe {
@@ -125,10 +134,8 @@ a {
     display: flex;
     justify-content: start;
     gap: 5px;
-    margin-inline-start: 1em;
     user-select: none;
     max-width: 130em;
-    width: calc(100% - 1em);
     margin: 0 auto;
 }
 
@@ -208,30 +215,105 @@ a {
     color: white;
 }
 
-@media (max-width: 576px) {
+/* Responsive Styles */
 
+@media (max-width: 992px) {
     .logo-hero {
-        position: static;
-        margin-bottom: 6em;
+        top: 0;
         height: 200px;
+        margin-bottom: 2em;
     }
 
     .button-hero-link {
         position: static;
+        margin-top: 1em;
     }
 
     .robot-hand {
         display: none;
     }
 
-    .hero-city {
+    .hero-city,
+    .hero-state {
         height: 15em;
-        bottom: -9em;
+    }
+
+    .hero-city {
+        top: 18em;
     }
 
     .hero-state {
-        height: 15em;
-        bottom: 21em;
+        bottom: 15em;
     }
+}
 
+/* Animation styles */
+
+@keyframes fadeMoveUp {
+    0% {
+        opacity: 0;
+        transform: translateY(60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeMoveDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.hero-state {
+    animation: fadeMoveDown 1s ease-out forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+.hero-city {
+    animation: fadeMoveUp 1s ease-out forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+.robot-hand {
+    animation: fadeMoveUp 1s ease-out forwards;
+    animation-delay: 0.2s;
+    opacity: 0;
+}
+
+.logo-hero {
+    animation: fadeMoveUp 1s ease-out forwards, float 4s ease-in-out infinite;
+    animation-delay: 1.4s, 2.4s;
+    opacity: 0;
+}
+
+.button-hero-link {
+    animation: fadeMoveDown 1s ease-out forwards, float 4s ease-in-out infinite;
+    animation-delay: 2.4s;
+    opacity: 0;
 }
