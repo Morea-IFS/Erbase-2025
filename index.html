@@ -5,7 +5,6 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Erbase 2025</title>
-    <link rel="shortcut icon" href="static/images/incomplete-erbase-logo.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -20,7 +19,7 @@
     <header class="fixed-top">
         <nav class="navbar navbar-expand-lg border-bottom border-1">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="#home">
                     <img src="static/images/logo-navbar.svg" alt="Erbase Logo" width="90"
                         class="d-inline-block align-text-top">
                 </a>
@@ -66,20 +65,26 @@
         <div class="invisible-navbar"></div>
         <!-- End invisible navbar -->
         <!-- Hero Section -->
-        <section class="hero py-5 text-center" id="home">
-            <div class="container text-center d-flex flex-column justify-content-center align-items-center">
-                <img src="static/images/logo-hero.png " alt="Erbase Logo" class="logo-hero">
-                <a href="#" class="button-hero-link">
-                    <button class="btn btn-warning btn-lg mt-3 text-white" type="button">
-                        <i class="fas fa-user-plus"></i>
-                        <span class="ms-2">Inscreva-se agora!</span>
-                    </button>
-                </a>
-                <img src="static/images/robot-hand.png" alt="Erbase Logo" class="robot-hand">
+        <section class="hero text-center" id="home">
+            <div class="container position-relative">
+                <!-- Background Images -->
                 <img src="static/images/hero-city.svg" alt="Cidade" class="hero-city">
                 <img src="static/images/hero-state.svg" alt="Estado" class="hero-state">
+        
+                <div class="row justify-content-center">
+                    <div class="col-12 col-md-8 d-flex flex-column align-items-center">
+                        <img src="static/images/logo-hero.png" alt="Erbase Logo" class="logo-hero">
+                        <a href="#" class="button-hero-link">
+                            <button class="btn btn-warning btn-lg text-white" type="button">
+                                <i class="fas fa-user-plus"></i>
+                                <span class="ms-2">Inscreva-se agora!</span>
+                            </button>
+                        </a>
+                        <img src="static/images/robot-hand.png" alt="Mão Robótica" class="robot-hand">
+                    </div>
+                </div>
             </div>
-        </section>
+        </section>        
         <!-- End Hero Section -->
         <!-- About Section -->
         <section class="py-5 bg-light" id="about" style="position: relative; z-index: 1;">
@@ -196,9 +201,9 @@
                                 <div class="card-content d-flex flex-column flex-grow-1 p-3">
                                     <div class="d-flex justify-content-between align-items-start">
                                         <div class="mb-2">
-                                            <img src="static/images/robotic-arms.svg" alt="XBase Logo" width="75">
+                                            <img src="static/images/robotic-arm.svg" alt="XBase Logo" width="75">
                                         </div>
-                                        <a href="#" class="icon-link" style="color: #484848;">
+                                        <a href="xbase.html" class="icon-link" style="color: #484848;">
                                             <i class="fas fa-external-link-alt"></i>
                                         </a>
                                     </div>

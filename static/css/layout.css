@@ -14,14 +14,14 @@ section {
 }
 
 .invisible-navbar {
-    height: 70px;
+    min-height: 79.7px;
     background-color: #271C57;
 }
 
 .navbar {
     /*gradient navbar background*/
     background: linear-gradient(to right, rgb(39, 28, 87) 0%, rgba(65, 43, 143, 0.895) 50%, rgb(39, 28, 87) 100%);
-    min-height: 70px;
+    min-height: 79.7px;
     border-radius: 0 0 1em 1em;
 }
 
@@ -48,6 +48,7 @@ section {
 
 .nav-link:hover {
     transform: scale(1.05);
+    color: #ffc107;
 }
 
 /* Burguer menu styles */
