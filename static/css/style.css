@@ -35,6 +35,7 @@ a {
     justify-content: center;
     align-items: center;
     color: white;
+    border-radius: 0 0 1em 1em;
 }
 
 .logo-hero {
@@ -82,7 +83,7 @@ a {
 /* Calls and workspaces styles */
 
 .call-card {
-    background-color: #ddd;
+    background-color: #f5f5f5;
     border-radius: 10px;
     border: 1px solid #aaa;
     overflow: hidden;
@@ -95,6 +96,13 @@ a {
 .call-card:hover {
     transform: translateY(-2px);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.call-card p {
+    margin: 0;
+    padding: 0.5em 1em;
+    font-size: 1.2rem;
+    color: #555;
 }
 
 .black-stripe {
@@ -140,6 +148,7 @@ a {
 }
 
 .date-tab {
+    position: relative;
     background-color: black;
     color: white;
     border: none;
@@ -147,11 +156,12 @@ a {
     padding: 8px 16px;
     font-weight: bold;
     cursor: pointer;
+    top: 7px;
 }
 
 .date-tab.active {
     position: relative;
-    top: 7px;
+    top: 0;
 }
 
 .schedule-body {
@@ -245,6 +255,17 @@ a {
     .hero-state {
         bottom: 15em;
     }
+
+    .call-card {
+        transform: none;
+        transition: none;
+    }
+
+    .call-card:hover{
+        transform: none;
+        box-shadow: none;
+    }
+
 }
 
 /* Animation styles */
