@@ -338,3 +338,7 @@ a {
     animation-delay: 2.4s;
     opacity: 0;
 }
+
+.lamp {
+    animation: float 4s ease-in-out infinite alternate;
+}
