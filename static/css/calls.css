@@ -28,6 +28,7 @@
     width: 50%;
     height: 30em;
     border-radius: 0 0 1em 0em;
+    user-select: none;
 }
 
 
