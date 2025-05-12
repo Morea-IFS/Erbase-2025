@@ -308,6 +308,18 @@ a {
     }
 }
 
+@keyframes floatlamp {
+    0% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -344,5 +356,5 @@ a {
 }
 
 .lamp {
-    animation: float 4s ease-in-out infinite alternate;
+    animation: floatlamp 4s ease-in-out infinite alternate;
 }
