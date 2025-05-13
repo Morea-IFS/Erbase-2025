@@ -93,12 +93,13 @@ a {
     overflow: hidden;
     height: 100%;
     min-height: 15em;
+    scale: 1;
     transform: translateY(20px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: 0.2s ease-in-out;
 }
 
 .call-card:hover {
-    transform: translateY(-2px);
+    scale: 1.05;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
