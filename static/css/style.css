@@ -162,6 +162,7 @@ a {
     font-weight: bold;
     cursor: pointer;
     top: 7px;
+    transition: all 0.1s ease-in
 }
 
 .date-tab.active {
