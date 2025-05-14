@@ -1,0 +1,67 @@
+.schedule-overlay {
+    position: relative;
+    cursor: pointer;
+}
+
+.schedule-overlay::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.5);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    z-index: 10;
+}
+
+.schedule-overlay::after {
+    content: "EM BREVE";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3em;
+    font-weight: bold;
+    color: #29166D;
+    z-index: 11;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background: rgba(255, 255, 255, 0.7);
+    padding: 20px 40px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(200, 193, 193, 0.1);
+}
+
+.schedule-overlay .schedule-table {
+    filter: blur(2px);
+}
+
+.schedule-overlay::before,
+.schedule-overlay::after,
+.schedule-overlay .schedule-table {
+    transition: all 0.3s ease;
+}
+
+
+.schedule-overlay:hover::before {
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.schedule-overlay:hover::after {
+    background: rgba(255, 255, 255, 0.9);
+    transform: translate(-50%, -50%) scale(1.05);
+}
+
+.schedule-overlay::before,
+.schedule-overlay::after,
+.schedule-overlay .schedule-table {
+    transition: all 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    .schedule-overlay::after {
+        font-size: 2em;
+        padding: 10px 20px;
+    }
+}

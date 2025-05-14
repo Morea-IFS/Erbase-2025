@@ -27,6 +27,10 @@ a {
     border-radius: 4px;
 }
 
+.text-justify {
+    text-align: justify;
+}
+
 /* Hero Styles */
 .hero {
     background-color: #271C57;
@@ -89,12 +93,13 @@ a {
     overflow: hidden;
     height: 100%;
     min-height: 15em;
+    scale: 1;
     transform: translateY(20px);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    transition: 0.2s ease-in-out;
 }
 
 .call-card:hover {
-    transform: translateY(-2px);
+    scale: 1.05;
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
 }
 
@@ -157,6 +162,7 @@ a {
     font-weight: bold;
     cursor: pointer;
     top: 7px;
+    transition: all 0.1s ease-in
 }
 
 .date-tab.active {
@@ -203,8 +209,8 @@ a {
 }
 
 .time-cell {
-    font-weight: bold;
     color: #29166D !important;
+    font-weight: bold;
 }
 
 .event-1 {
@@ -304,6 +310,18 @@ a {
     }
 }
 
+@keyframes floatlamp {
+    0% {
+        transform: translateY(15px);
+    }
+    50% {
+        transform: translateY(-30px);
+    }
+    100% {
+        transform: translateY(15px);
+    }
+}
+
 @keyframes fadeIn {
     from { opacity: 0; }
     to { opacity: 1; }
@@ -337,4 +355,8 @@ a {
     animation: fadeMoveDown 1s ease-out forwards, float 4s ease-in-out infinite;
     animation-delay: 2.4s;
     opacity: 0;
+}
+
+.lamp {
+    animation: floatlamp 4s ease-in-out infinite alternate;
 }
