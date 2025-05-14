@@ -4,7 +4,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Erbase 2025</title>
+    <title>ERBASE 2025</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -13,6 +13,7 @@
     <link rel="shortcut icon" href="static/images/cursor.svg" type="image/x-icon">
     <link rel="stylesheet" href="static/css/layout.css">
     <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/provisional.css">
 </head>
 
 <body>
@@ -62,9 +63,10 @@
     </header>
     <!--End Navbar-->
     <main class="bg-light">
-        <!-- Invisible navbar -->
+        <!-- Invisible Navbar -->
         <div class="invisible-navbar"></div>
-        <!-- End invisible navbar -->
+        <!-- End Invisible Navbar -->
+
         <!-- Hero Section -->
         <section class="hero text-center" id="home">
             <div class="container position-relative">
@@ -75,10 +77,17 @@
                 <div class="row justify-content-center">
                     <div class="col-12 col-md-8 d-flex flex-column align-items-center">
                         <img src="static/images/logo-hero.png" alt="Erbase Logo" class="logo-hero">
-                        <a href="#" target="_blank" rel="noopener noreferrer" class="button-hero-link">
+                        <!-- <a href="#" target="_blank" rel="noopener noreferrer" class="button-hero-link">
                             <button class="btn btn-warning btn-lg text-white" type="button">
                                 <i class="fas fa-user-plus"></i>
                                 <span class="ms-2">Inscreva-se agora!</span>
+                            </button>
+                        </a> -->
+                        <a target="_blank" rel="noopener noreferrer" class="button-hero-link">
+                            <button class="btn btn-warning btn-lg text-white" type="button"
+                                style="cursor: not-allowed;">
+                                <i class="fas fa-user-plus"></i>
+                                <span class="ms-2">INSCRIÇÕES EM BREVE</span>
                             </button>
                         </a>
                         <img src="static/images/robot-hand.png" alt="Mão Robótica" class="robot-hand">
@@ -87,6 +96,7 @@
             </div>
         </section>
         <!-- End Hero Section -->
+
         <!-- About Section -->
         <section class="py-5 bg-light" id="about" style="position: relative; z-index: 1;">
             <div class="container">
@@ -138,6 +148,7 @@
             </div>
         </section>
         <!-- End About Section -->
+
         <!-- Calls and Workshops Section -->
         <section class="py-5 bg-light" id="calls">
             <div class="container">
@@ -158,10 +169,12 @@
                                             <i class="fas fa-external-link-alt"></i>
                                         </a>
                                     </div>
-                                    <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #277E13;">PesqBase</h5>
+                                    <a href="pesqbase.html">
+                                        <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #277E13;">PesqBase</h5>
+                                    </a>
                                     <p class="mb-0 small fs-6">
                                         Workshop de Trabalhos de Pesquisa (Projetos de Pesquisa, Iniciação Científica,
-                                        TCC - Trabalho de Conclusão de Curso)
+                                        TCC - Trabalho de Conclusão de Curso e Trabalho de Pós Graduação)
                                     </p>
                                 </div>
                             </div>
@@ -182,7 +195,9 @@
                                             <i class="fas fa-external-link-alt"></i>
                                         </a>
                                     </div>
-                                    <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #29166D;">WeiBase</h5>
+                                    <a href="weibase.html">
+                                        <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #29166D;">WeiBase</h5>
+                                    </a>
                                     <p class="mb-0 small fs-6">
                                         Workshop de Educação em Informática e Informática na Educação com pesquisas e
                                         relatos
@@ -206,7 +221,9 @@
                                             <i class="fas fa-external-link-alt"></i>
                                         </a>
                                     </div>
-                                    <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #484848;">XBase</h5>
+                                    <a href="xbase.html">
+                                        <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #484848;">XBase</h5>
+                                    </a>
                                     <p class="mb-0 small fs-6">
                                         Workshop de experimentos inovadores, solução e protótipos (de hardware e/ou
                                         software)
@@ -230,7 +247,9 @@
                                             <i class="fas fa-external-link-alt"></i>
                                         </a>
                                     </div>
-                                    <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #2C2C2C;">ProgBase</h5>
+                                    <a href="progbase.html">
+                                        <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #2C2C2C;">ProgBase</h5>
+                                    </a>
                                     <p class="mb-0 small fs-6">
                                         Competição entre equipes de programadores com foco em resolver problemas.
                                     </p>
@@ -253,7 +272,9 @@
                                             <i class="fas fa-external-link-alt"></i>
                                         </a>
                                     </div>
-                                    <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #277E13;">RoboBase</h5>
+                                    <a href="robobase.html">
+                                        <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #277E13;">RoboBase</h5>
+                                    </a>
                                     <p class="mb-0 small fs-6">
                                         Competição na qual as habilidades e características dos robôs criados são
                                         avaliadas e testadas.
@@ -277,9 +298,11 @@
                                             <i class="fas fa-external-link-alt"></i>
                                         </a>
                                     </div>
-                                    <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #29166D;">MiniCursos</h5>
+                                    <a href="minicursos.html">
+                                        <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #29166D;">MiniCursos</h5>
+                                    </a>
                                     <p class="mb-0 small fs-6">
-                                        Minicursos sobre o uso da informática na educação, com foco em pesquisas,
+                                        Minicursos sobre tópicos atuais de tecnologia da informação na educação, com foco em pesquisas,
                                         práticas e troca de experiências.
                                     </p>
                                 </div>
@@ -301,7 +324,9 @@
                                             <i class="fas fa-external-link-alt"></i>
                                         </a>
                                     </div>
-                                    <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #484848;">Meninas Digitais</h5>
+                                    <a href="meninas.html">
+                                        <h5 class="fw-bold mt-2 mb-1 fs-4" style="color: #484848;">Meninas Digitais</h5>
+                                    </a>
                                     <p class="mb-0 small fs-6">
                                         Workshop de ações, projetos e experiências conduzidas por meninas e mulheres na
                                         área de computação.
@@ -315,6 +340,7 @@
             </div>
         </section>
         <!-- End Calls and Workshops Section -->
+
         <!-- Schedule Section -->
         <section class="schedule-section py-5 bg-light" id="schedule">
             <div class="container">
@@ -325,117 +351,120 @@
                     <button class="date-tab" style="background-color: #F6C303;" data-day="day-2">01/03</button>
                     <button class="date-tab" style="background-color: #277E13;" data-day="day-3">02/03</button>
                 </div>
+                <!-- div wrapper -->
+                <div class="schedule-overlay">
+                    <div class="schedule-grid">
+                        <table class="schedule-table">
+                            <thead>
+                                <tr>
+                                    <th>Horários</th>
+                                    <th>Auditório</th>
+                                    <th>Mini Auditório</th>
+                                    <th>Lab 2</th>
+                                    <th>Lab 4</th>
+                                    <th>Lab 6</th>
+                                    <th>Coinf</th>
+                                </tr>
+                            </thead>
 
-                <div class="schedule-grid">
-                    <table class="schedule-table">
-                        <thead>
-                            <tr>
-                                <th>Horários</th>
-                                <th>Auditório</th>
-                                <th>Mini Auditório</th>
-                                <th>Lab 2</th>
-                                <th>Lab 4</th>
-                                <th>Lab 6</th>
-                                <th>Coinf</th>
-                            </tr>
-                        </thead>
+                            <!-- Dia 31/02 -->
+                            <tbody class="schedule-body day-1">
+                                <tr>
+                                    <td class="time-cell">08:00</td>
+                                    <td class="event-2">Palestra A</td>
+                                    <td class="event-2" rowspan="2">Workshop Front-end</td>
+                                    <td class="event-2">Curso Python</td>
+                                    <td class="event-2">Curso HTML CSS</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-cell">09:00</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td class="event-2">Introdução a Programação Mobile</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-cell">10:00</td>
+                                    <td class="event-2">Palestra B</td>
+                                    <td class="event-2">Curso Java Spring</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
 
-                        <!-- Dia 31/02 -->
-                        <tbody class="schedule-body day-1">
-                            <tr>
-                                <td class="time-cell">08:00</td>
-                                <td class="event-2">Palestra A</td>
-                                <td class="event-2" rowspan="2">Workshop Front-end</td>
-                                <td class="event-2">Curso Python</td>
-                                <td class="event-2">Curso HTML CSS</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td class="time-cell">09:00</td>
-                                <td></td>
-                                <td></td>
-                                <td class="event-2">Introdução a Programação Mobile</td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td class="time-cell">10:00</td>
-                                <td class="event-2">Palestra B</td>
-                                <td class="event-2">Curso Java Spring</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
+                            <!-- Dia 01/03 -->
+                            <tbody class="schedule-body day-2">
+                                <tr>
+                                    <td class="time-cell">08:00</td>
+                                    <td class="event-3">Palestra C</td>
+                                    <td class="event-3">Apresentaçâo de TCC</td>
+                                    <td class="event-3">Curso Arduino</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-cell">09:00</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-cell">10:00</td>
+                                    <td class="event-3">Palestra B</td>
+                                    <td class="event-3">Curso Java Spring</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
 
-                        <!-- Dia 01/03 -->
-                        <tbody class="schedule-body day-2">
-                            <tr>
-                                <td class="time-cell">08:00</td>
-                                <td class="event-3">Palestra C</td>
-                                <td class="event-3">Apresentaçâo de TCC</td>
-                                <td class="event-3">Curso Arduino</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td class="time-cell">09:00</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td class="time-cell">10:00</td>
-                                <td class="event-3">Palestra B</td>
-                                <td class="event-3">Curso Java Spring</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-
-                        <!-- Dia 02/03 -->
-                        <tbody class="schedule-body day-3">
-                            <tr>
-                                <td class="time-cell">08:00</td>
-                                <td class="event-1">Palestra D</td>
-                                <td></td>
-                                <td class="event-1">Conceitos de Redes</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td class="time-cell">09:00</td>
-                                <td></td>
-                                <td class="event-1">Apresentação de TCC</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                            <tr>
-                                <td class="time-cell">10:00</td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                                <td></td>
-                            </tr>
-                        </tbody>
-                    </table>
+                            <!-- Dia 02/03 -->
+                            <tbody class="schedule-body day-3">
+                                <tr>
+                                    <td class="time-cell">08:00</td>
+                                    <td class="event-1">Palestra D</td>
+                                    <td></td>
+                                    <td class="event-1">Conceitos de Redes</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-cell">09:00</td>
+                                    <td></td>
+                                    <td class="event-1">Apresentação de TCC</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                <tr>
+                                    <td class="time-cell">10:00</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>
         <!-- End Schedule Section -->
+
         <!-- Registrations Section -->
         <section class="bg-light" id="registrations" style="padding: 5em 0 5em 0;">
             <div class="container">
@@ -457,10 +486,11 @@
                             pesquisadores e profissionais da área de computação.
                         </p>
                         <div class="text-center text-lg-start">
-                            <a href="#" target="_blank" rel="noopener noreferrer">
-                                <button class=" btn btn-warning text-white btn-lg mt-3" type="button">
+                            <a target="_blank" rel="noopener noreferrer">
+                                <button class="btn btn-warning btn-lg text-white" type="button"
+                                    style="cursor: not-allowed;">
                                     <i class="fas fa-user-plus"></i>
-                                    <span class="ms-2">Inscreva-se agora!</span>
+                                    <span class="ms-2">INSCRIÇÕES EM BREVE</span>
                                 </button>
                             </a>
                         </div>
@@ -470,10 +500,10 @@
                             <img src="static/images/lamp.svg" class="figure-img img-fluid rounded lamp" alt="...">
                         </figure>
                     </div>
-
                 </div>
             </div>
         </section>
+        <!-- End Registrations Section -->
     </main>
     <!-- Footer -->
     <footer class="text-white py-5" style="background-color: #29166D; border-radius: 20px 20px 0 0;">
@@ -525,7 +555,6 @@
         </div>
     </footer>
     <!-- End Footer -->
-
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
