@@ -231,48 +231,6 @@ a {
     color: white;
 }
 
-/* Responsive Styles */
-
-@media (max-width: 992px) {
-    .logo-hero {
-        top: 0;
-        height: 200px;
-        margin-bottom: 2em;
-    }
-
-    .button-hero-link {
-        position: static;
-        margin-top: 1em;
-    }
-
-    .robot-hand {
-        display: none;
-    }
-
-    .hero-city,
-    .hero-state {
-        height: 15em;
-    }
-
-    .hero-city {
-        top: 18em;
-    }
-
-    .hero-state {
-        bottom: 15em;
-    }
-
-    .call-card {
-        transform: none;
-        transition: none;
-    }
-
-    .call-card:hover{
-        transform: none;
-        box-shadow: none;
-    }
-
-}
 
 /* Animation styles */
 
@@ -359,4 +317,48 @@ a {
 
 .lamp {
     animation: floatlamp 4s ease-in-out infinite alternate;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 992px) {
+    .logo-hero {
+        top: 0;
+        height: 200px;
+        margin-bottom: 2em;
+    }
+
+    .button-hero-link {
+        position: static;
+        margin-top: 1em;
+    }
+
+    .robot-hand {
+        display: none;
+    }
+
+    .hero-city,
+    .hero-state {
+        height: 15em;
+    }
+
+    .hero-city {
+        top: 18em;
+    }
+
+    .hero-state {
+        bottom: 15em;
+    }
+
+    .call-card {
+        transform: none;
+        transition: none;
+    }
+
+    .call-card:hover{
+        scale: none;
+        transform: none;
+        box-shadow: none;
+    }
+
 }

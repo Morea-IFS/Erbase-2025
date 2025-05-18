@@ -65,3 +65,10 @@
         padding: 10px 20px;
     }
 }
+
+@media (max-width: 450px) {
+    .schedule-overlay::after {
+        font-size: 1.8em;
+        padding: 5px 10px;
+    }
+}
