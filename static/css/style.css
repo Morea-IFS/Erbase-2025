@@ -106,7 +106,6 @@ a {
 .call-card p {
     margin: 0;
     padding: 0.5em 1em;
-    font-size: 1.2rem;
     color: #555;
 }
 
@@ -227,6 +226,12 @@ a {
 
 .event-3 {
     background-color: #F6C303;
+    font-weight: bold;
+    color: white;
+}
+
+.event-4 {
+    background-color: #484848;
     font-weight: bold;
     color: white;
 }
