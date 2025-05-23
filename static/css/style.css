@@ -44,9 +44,9 @@ a {
 
 .logo-hero {
     position: relative;
-    top: 6.5em;
+    top: 4.5em;
     z-index: 1;
-    height: 250px;
+    height: 23em;
     margin-bottom: 3em;
     user-select: none;
 }
@@ -54,12 +54,12 @@ a {
 .button-hero-link {
     position: absolute;
     z-index: 2;
-    top: 25em;
+    top: 29em;
 }
 
 .robot-hand {
     position: relative;
-    top: 2em;
+    top: -1em;
     left: 3em;
     z-index: 1;
     height: 500px;
@@ -68,7 +68,7 @@ a {
 
 .hero-city {
     position: absolute;
-    bottom: -1em;
+    bottom: 3em;
     left: 0;
     height: 20em;
     filter: opacity(0.5);
@@ -77,7 +77,7 @@ a {
 
 .hero-state {
     position: absolute;
-    bottom: 25em;
+    bottom: 28em;
     right: 0;
     height: 20em;
     filter: opacity(0.5);
@@ -329,7 +329,7 @@ a {
 @media (max-width: 992px) {
     .logo-hero {
         top: 0;
-        height: 200px;
+        height: 20em;
         margin-bottom: 2em;
     }
 
@@ -348,7 +348,7 @@ a {
     }
 
     .hero-city {
-        top: 18em;
+        top: 19em;
     }
 
     .hero-state {
@@ -365,5 +365,15 @@ a {
         transform: none;
         box-shadow: none;
     }
+}
 
+@media (max-width: 425px) {
+    .logo-hero {
+        top: 0;
+        height: 15em;
+    }
+
+    .date-tab {
+        padding: 7px 6px;
+    }
 }
