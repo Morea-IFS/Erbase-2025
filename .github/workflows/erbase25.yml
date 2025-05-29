@@ -3,14 +3,17 @@ run-name: ${{ github.actor }} Worflow Code  🚀
 on:
   push:
     branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
-  DeployProd:
-    name: Deploy to Production
+  DeployBeta:
+    name: Deploy to Beta
+    if: github.event_name == 'pull_request'
     runs-on: ubuntu-latest
     environment:
-      name: production
-      url: 'http://erbase.morea-fs.org'
+      name: development
+      url: 'http://erbase.morea-ifs.org'
     steps:
       - name: Checkout Code
         uses: actions/checkout@v4
@@ -29,3 +32,31 @@ jobs:
           git pull origin main
           date
           EOF
+  DeployProd:
+    name: Deploy to Beta
+    if: github.event.ref == 'refs/heads/main'
+    needs: [DeployBeta]
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: 'http://erbase.sbc.org.br'
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+      - name: Install OpenVPN
+        run: |
+          sudo apt update
+          sudo apt install -y openvpn openvpn-systemd-resolved
+      - name: Connect to VPN
+        uses: "kota65535/github-openvpn-connect-action@v2"
+        with:
+          config_file: .github/workflows/VPN-Servicos.ovpn
+          username: ${{ secrets.OVPN_USERNAME }}
+          password: ${{ secrets.OVPN_PASSWORD }}
+      - name: Sync files
+        uses: SamKirkland/FTP-Deploy-Action@4.0.0
+        with:
+          server: ${{ secrets.ftp_host }}
+          username: ${{ secrets.ftp_user }}
+          password: ${{ secrets.ftp_password }}
+          server-dir: public_html/gabriel/
