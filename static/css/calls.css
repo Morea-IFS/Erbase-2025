@@ -78,7 +78,7 @@
     width: 13em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 922px) {
     .hero-calls-content-title {
         font-size: 2.5em;
     }
@@ -92,7 +92,7 @@
     }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 680px) {
     .hero-calls-content-title {
         font-size: 1.7em;
     }

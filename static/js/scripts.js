@@ -35,8 +35,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
 		// If no section is active, default to the first or last active link
 		if (!activated) {
-			const lastActive = nav.querySelector('.nav-link.active');
-			setActive(lastActive || nav.querySelector('.nav-link'));
+			const lastActive = nav.querySelector(".nav-link.active");
+			setActive(lastActive || nav.querySelector(".nav-link"));
 		}
 	};
 
@@ -77,6 +77,24 @@ function showActiveSchedule() {
 		if (activeBody) activeBody.style.display = "table-row-group";
 	}
 }
+
+const titleCalls = document.querySelector(".hero-calls-content-title");
+
+function textCallsUpdate() {
+	if (!titleCalls) return;
+
+	if (window.innerWidth <= 420) {
+		titleCalls.textContent = "Futebol de Robôs";
+	} else {
+		titleCalls.textContent = "Campeonato de Futebol de Robôs";
+	}
+}
+
+// Call on load
+textCallsUpdate();
+
+// Update in real time on resize
+window.addEventListener("resize", textCallsUpdate);
 
 // Add click event listeners to each tab to switch the schedule
 tabs.forEach((tab) => {
