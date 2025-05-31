@@ -327,6 +327,11 @@ a {
 /* Responsive Styles */
 
 @media (max-width: 992px) {
+    .center-logo {
+        position: relative;
+        bottom: 2.5em;
+    }
+
     .logo-hero {
         top: 0;
         height: 20em;
@@ -348,11 +353,11 @@ a {
     }
 
     .hero-city {
-        top: 19em;
+        top: 22em;
     }
 
     .hero-state {
-        bottom: 15em;
+        bottom: 19em;
     }
 
     .call-card {
@@ -370,10 +375,30 @@ a {
 @media (max-width: 425px) {
     .logo-hero {
         top: 0;
-        height: 15em;
+        height: 17em;
+    }
+
+    .hero-city,
+    .hero-state {
+        height: 14em;
+    }
+
+    .hero-city {
+        top: 20em;
+    }
+
+    .hero-state {
+        bottom: 16em;
     }
 
     .date-tab {
         padding: 7px 6px;
+    }
+}
+
+@media (max-width: 358px) {
+    .logo-hero {
+        top: 0;
+        height: 15em;
     }
 }
