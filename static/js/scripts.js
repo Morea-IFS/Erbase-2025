@@ -78,7 +78,7 @@ function showActiveSchedule() {
 	}
 }
 
-const titleCalls = document.querySelector(".hero-calls-content-title");
+const titleCalls = document.querySelector(".hero-calls-content-title2");
 
 function textCallsUpdate() {
 	if (!titleCalls) return;
