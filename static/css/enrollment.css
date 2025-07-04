@@ -1,0 +1,207 @@
+/* Enrollment Page Styles */
+.hero-banner {
+    display: flex;
+    flex-direction: column;
+    height: 30em;
+    background-color: #271C57;
+    color: white;
+    border-radius: 0 0 20px 20px;
+}
+
+.title-enrollment {
+    user-select: none;
+    height: 13em;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -6em;
+    z-index: 1;
+}
+
+.side-logo {
+    position: relative;
+    height: 25em;
+    user-select: none;
+}
+
+.robot {
+    position: relative;
+    top: 2em;
+    left: 5.5em;
+    z-index: 1;
+    height: 20em;
+}
+
+.title-2 {
+    position: relative;
+    height: 12em;
+    user-select: none;
+}
+
+.city-2 {
+    position: relative;
+    top: -18.5em;
+    height: 15em;
+}
+
+.hero-state {
+    position: absolute;
+    user-select: none;
+    top: 5em;
+    right: 7em;
+    height: 17em;
+    z-index: 1;
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.hero-city {
+    display: none;
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.title::after {
+    margin: 0.5em 0;
+}
+
+.card {
+    border-color: #271C57;
+    box-shadow: 0 0 0.5em #271C57;
+    padding: 2em;
+}
+
+.benefit-card {
+    transition: transform 0.3s ease-in-out;
+}
+
+.benefit-card:hover {
+    transform: translateY(-10px);
+}
+
+.pricing-table th {
+    background-color: #271C57;
+    color: white;
+}
+
+.pricing-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 2rem;
+}
+
+.pricing-table th,
+.pricing-table td {
+    padding: 1rem;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.pricing-table td {
+    background-color: #ececec;
+}
+
+.pricing-table td:first-child {
+    text-align: left;
+}
+
+.faixa-badge {
+    display: inline-block;
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.faixa-1 {
+    background-color: #4CAF50;
+    display: none;
+    color: white;
+}
+
+.faixa-2 {
+    background-color: #FFC107;
+    display: none;
+    color: black;
+}
+
+.faixa-3 {
+    background-color: #F44336;
+    display: none;
+    color: white;
+}
+
+
+@media (max-width: 768px) {
+    .pricing-table thead {
+        display: none;
+    }
+
+    .pricing-table tr {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .pricing-table td {
+        display: flex;
+        text-align: center;
+        position: relative;
+        white-space: normal;
+        justify-content: space-around;
+    }
+
+    .pricing-table td:first-child {
+        background-color: #271C57;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .faixa-1, .faixa-2, .faixa-3 {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .logos {
+        justify-content: center;
+    }
+
+    .city-2 {
+        display: none;
+    }
+
+    .robot {
+        top: 7em;
+        left: 2em;
+        height: 17em;
+    }
+
+    .side-logo {
+        display: none;
+    }
+
+    .title-2 {
+        display: none;
+    }
+
+    .hero-state {
+        position: absolute;
+        right: 0;
+        height: 15em;
+    }
+
+    .hero-city {
+        display: block;
+        position: absolute;
+        top: 22em;
+    }
+}
