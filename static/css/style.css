@@ -176,7 +176,8 @@ a {
 .schedule-grid {
     position: relative;
     z-index: 1;
-    overflow-x: auto;
+    height: 580px;
+    overflow: auto;
 
 }
 
@@ -193,12 +194,14 @@ a {
 
 .schedule-table thead th {
     padding: 10px;
+    font-size: 14px;
     border: 2px solid #333;
     color: #29166D !important;
 }
 
 .schedule-table td,
 .schedule-table th {
+    font-size: 14px;
     border: 2px solid #333;
     padding: 8px;
     text-align: center;
@@ -234,6 +237,10 @@ a {
     background-color: #484848;
     font-weight: bold;
     color: white;
+}
+.event-pause{
+    background-color: #f44747;
+    color: #fff;
 }
 
 
