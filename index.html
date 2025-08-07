@@ -872,7 +872,11 @@
                                 </tr>
                                 <tr>
                                     <td class="time-cell">19:00 - 19:30</td>
-                                    <td class="event-3" rowspan="3">Palestra P3: Observabilidade com OpenTelemetry e eBPF (Fillipe Paz - UOL EdTech)</td>
+                                    <td class="event-3" rowspan="3">
+                                        <a href="templates/speaker-pages/fillipe-almeida.html" class="text-white">
+                                            Palestra P3: Observabilidade com OpenTelemetry e eBPF (Fillipe Paz - UOL EdTech)
+                                        </a>
+                                    </td>
                                     <td></td>
                                     <td></td>
                                     <td></td>
@@ -1586,7 +1590,9 @@
         <section class="py-5" id="speakers" style="background-color: #e1e1e1;">
             <div class="container">
                 <h2 class="title text-center fw-bold display-6 mb-5">Palestrantes</h2>
-
+                <p class="text-muted small text-center mb-5">
+                    <em>Arraste para visualizar todos os palestrantes, se necessário.</em>
+                </p>
                 <div class="row flex-nowrap overflow-auto pb-3 gx-4 scroll-snap-x" 
                 style="scroll-snap-type: x mandatory;">
 
@@ -1619,7 +1625,7 @@
                     </div>
 
                     <!-- Palestrante 2 -->
-                     <div class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3" style="scroll-snap-align: start;">
+                    <div class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3" style="scroll-snap-align: start;">
                         <div class="card h-100 border-2 border-secondary shadow-sm rounded-5">
                             <img src="static/images/palestrantes/sandra-eliza.webp" class="card-img-top object-fit-cover rounded-5"
                                 style="height: 200px;" alt="Melime Fontes">
@@ -1668,7 +1674,7 @@
                         </div>
                     </div>
                     <!-- Palestrante 4 -->
-                     <div class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3" style="scroll-snap-align: start;">
+                    <div class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3" style="scroll-snap-align: start;">
                         <div class="card h-100 border-2 border-secondary shadow-sm rounded-5">
                             <img src="static/images/palestrantes/melline-fontes.webp" class="card-img-top object-fit-cover rounded-5"
                                 style="height: 200px;" alt="Melime Fontes">
@@ -1692,9 +1698,39 @@
                             </div>
                         </div>
                     </div>
+                    <!-- Palestrante 5 -->
+                    <div class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3" style="scroll-snap-align: start;">
+                        <div class="card h-100 border-2 border-secondary shadow-sm rounded-5">
+                            <img src="static/images/palestrantes/fillipe-almeida.webp" class="card-img-top object-fit-cover rounded-5"
+                                style="height: 200px;" alt="">
+                            <div class="card-body text-start d-flex flex-column">
+                                <h3 class="h3 text-center fw-bold">Fillipe Almeida</h3>
+                                <p class="mb-2 flex-grow-1">
+                                    Mestre em Ciência da Computação e Doutorando em Ciência da Computação 
+                                    atua no design, implementação e operação de sistemas de larga escala 
+                                    no setor privado.
+                                </p>
+                                <p class="mb-3">
+                                    <strong>Palestra:</strong> 
+                                    Observabilidade com OpenTelemetry e eBPF.
+                                </p>
+                                <a href="templates/speaker-pages/fillipe-almeida.html">
+                                    <button class="btn mt-auto text-white w-100 d-flex align-items-center justify-content-center" style="background-color: #2a0d93;" type="button">
+                                        <i class="fas fa-info-circle fs-5"></i>
+                                        <span class="ms-2 fs-6">Saiba Mais</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Barra de progresso horizontal dos cards -->
+                <div class="scroll-progress-bar mt-2" style="height: 4px; background-color: #ccc; border-radius: 5px; overflow: hidden;">
+                    <div id="scroll-progress-indicator" style="height: 100%; width: 0%; background-color: #2a0d93; transition: width 0.2s;"></div>
                 </div>
             </div>
         </section>
+        <!--End Speakers Section-->
 
         <!-- Registrations Section -->
         <section class="bg-light" id="registrations" style="padding: 5em 0 5em 0;">

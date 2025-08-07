@@ -64,6 +64,13 @@
     color: #29166D;
 }
 
+.hero-calls-content-title1 {
+    text-align: start;
+    font-size: 2em;
+    font-weight: bold;
+    color: #29166D;
+}
+
 .hero-calls-content-image {
     border-radius: 50%;
     width: 8em;
@@ -101,9 +108,19 @@
     }
 }
 
+@media (max-width: 768px) {
+    .hero-calls-content-title1 {
+        font-size: 1.7em;
+    }
+}
+
 @media (max-width: 680px) {
     .hero-calls-content-title {
         font-size: 1.7em;
+    }
+
+    .hero-calls-content-title1 {
+        font-size: 1.3em;
     }
 
     .hero-calls-content-subtitle {
