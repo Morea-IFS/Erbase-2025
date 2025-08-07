@@ -63,6 +63,26 @@ document.addEventListener("DOMContentLoaded", () => {
 			setActive(link);
 		});
 	});
+
+	// === Scroll progress bar dos cards de palestrantes (RESPONSIVO) ===
+	const scrollContainer = document.querySelector(".scroll-snap-x");
+	const progressBar = document.getElementById("scroll-progress-indicator");
+
+	if (scrollContainer && progressBar) {
+		const updateProgressBar = () => {
+			const scrollLeft = scrollContainer.scrollLeft;
+			const maxScrollLeft =
+				scrollContainer.scrollWidth - scrollContainer.clientWidth;
+
+			const scrollPercent =
+				maxScrollLeft > 0 ? (scrollLeft / maxScrollLeft) * 100 : 100;
+			progressBar.style.width = `${scrollPercent}%`;
+		};
+
+		scrollContainer.addEventListener("scroll", updateProgressBar);
+		window.addEventListener("load", updateProgressBar);
+		window.addEventListener("resize", updateProgressBar);
+	}
 });
 
 // Table script for the schedule
