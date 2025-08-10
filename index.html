@@ -1732,14 +1732,27 @@
         <!-- End Schedule Section -->
 
         <!--Speakers Section-->
-        <section class="py-5" id="speakers" style="background-color: #e1e1e1;">
-            <div class="container">
+        <section class="py-5 position-relative" id="speakers" style="background-color: #e1e1e1;">
+            <div class="container position-relative">
+
+                <button id="scroll-left-btn" 
+                    class="btn btn-lg d-none d-md-flex justify-content-center align-items-center position-absolute top-50 translate-middle-y rounded-circle glass-btn fade-btn"
+                    style="width: 50px; height: 50px; left: -25px; z-index: 10;">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+
+                <button id="scroll-right-btn"
+                    class="btn btn-lg d-none d-md-flex justify-content-center align-items-center position-absolute top-50 translate-middle-y rounded-circle glass-btn fade-btn"
+                    style="width: 50px; height: 50px; right: -25px; z-index: 10;">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+
                 <h2 class="title text-center fw-bold display-6 mb-5">Palestrantes</h2>
                 <p class="text-muted small text-center mb-5">
                     <em>Arraste para visualizar todos os palestrantes, se necessário.</em>
                 </p>
-                <div class="row flex-nowrap overflow-auto pb-3 gx-4 scroll-snap-x" 
-                style="scroll-snap-type: x mandatory;">
+
+                <div class="row flex-nowrap overflow-auto pb-3 gx-4 scroll-snap-x" style="scroll-snap-type: x mandatory;">
 
                     <!-- Palestrante 1 -->
                     <div class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3" style="scroll-snap-align: start;">
@@ -1794,22 +1807,24 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Palestrante 3 -->
                     <div class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3" style="scroll-snap-align: start;">
                         <div class="card h-100 border-2 border-secondary shadow-sm rounded-5">
-                            <img src="static/images/palestrantes/gracieth-valenzuela.webp" class="card-img-top object-fit-cover rounded-5"
-                                style="height: 200px;" alt="Gracieth Valenzuela">
+                            <img src="static/images/palestrantes/yago-souza.webp" class="card-img-top object-fit-cover rounded-5"
+                                style="height: 200px;" alt="Yago Souza">
                             <div class="card-body text-start d-flex flex-column">
-                                <h3 class="h3 text-center fw-bold">Gracieth Valenzuela</h3>
+                                <h3 class="h3 text-center fw-bold">Yago Souza</h3>
                                 <p class="mb-2 flex-grow-1">
-                                    Analista em Proteção de Dados Pessoais e Segurança da Informação e Professora efetiva do (IFBA).
+                                    Engenheiro de Computação com Pós-Graduação em Engenharia de Software para Dispositivos 
+                                    Móveis e mestrando em Computação Inteligente.
                                 </p>
                                 <p class="mb-3">
-                                    <strong> Minicurso:</strong> 
-                                    Governança em privacidade de dados e LGPD e 
-                                    Oficina de Gestão de Incidentes Cibernéticos.
+                                    <strong>Palestra:</strong> 
+                                    Interfaces Web Inteligentes: Integrando IA Conversacional e 
+                                    GenAI em Experiências Front-End.
                                 </p>
-                                <a href="templates/speaker-pages/gracieth-valenzuela.html">
+                                <a href="templates/speaker-pages/yago-souza.html">
                                     <button class="btn mt-auto text-white w-100 d-flex align-items-center justify-content-center" style="background-color: #2a0d93;" type="button">
                                         <i class="fas fa-info-circle fs-5"></i>
                                         <span class="ms-2 fs-6">Saiba Mais</span>
@@ -1818,6 +1833,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Palestrante 4 -->
                     <div class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3" style="scroll-snap-align: start;">
                         <div class="card h-100 border-2 border-secondary shadow-sm rounded-5">
@@ -1843,6 +1859,7 @@
                             </div>
                         </div>
                     </div>
+
                     <!-- Palestrante 5 -->
                     <div class="col-10 col-sm-8 col-md-6 col-lg-4 col-xl-3" style="scroll-snap-align: start;">
                         <div class="card h-100 border-2 border-secondary shadow-sm rounded-5">
@@ -1868,8 +1885,10 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
-                <!-- Barra de progresso horizontal dos cards -->
+
+                <!-- Barra de progresso -->
                 <div class="scroll-progress-bar mt-2" style="height: 4px; background-color: #ccc; border-radius: 5px; overflow: hidden;">
                     <div id="scroll-progress-indicator" style="height: 100%; width: 0%; background-color: #2a0d93; transition: width 0.2s;"></div>
                 </div>
@@ -1940,7 +1959,6 @@
                     </div>
                 </div>
 
-
                 <!-- Funding -->
                 <div class="col-md-3">
                     <h6 class="text-uppercase fw-bold mb-3">Fomento</h6>
@@ -1953,31 +1971,38 @@
                 <!-- Sponsorship -->
                 <div class="col-md-3">
                     <h6 class="text-uppercase fw-bold mb-3">Patrocínio</h6>
-                    <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
+                    
+                    <!-- Ouro -->
+                    <p class="fw-bold text-warning mb-2 text-center">Ouro</p>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-md-center gap-3 mb-3">
                         <img src="static/images/quero-delivery.svg" alt="Quero Delivery" height="80" />
-                        <img src="static/images/minas.png" alt="Minas" height="60" />
                         <img src="static/images/tecnos.png" alt="Tecnos" height="60" />
                     </div>
+
+                    <!-- Bronze -->
+                    <p class="fw-bold mb-2 text-center" style="color: #f96939;">Bronze</p>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-md-center gap-3">
+                        <img src="static/images/minas.png" alt="Minas" height="80" />
+                        <img src="static/images/gm-tech.svg" alt="GMTech" height="80" />
+                    </div>
                 </div>
+            </div>
 
-                <hr class="border-light" />
+            <hr class="border-light" />
 
-                <div
-                    class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center mt-4 px-2 text-center text-md-start">
-                    <small>&copy; 2025 ERBASE - Todos os direitos reservados.</small>
-                    <small>
-                        Contato:
-                        <a href="mailto:erbase2025@ifs.edu.br" class="text-white text-decoration-underline">
-                            erbase2025@ifs.edu.br
-                        </a>
-                    </small>
-                </div>
-
-
+            <div class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center mt-4 px-2 text-center text-md-start">
+                <small>&copy; 2025 ERBASE - Todos os direitos reservados.</small>
+                <small>
+                    Contato:
+                    <a href="mailto:erbase2025@ifs.edu.br" class="text-white text-decoration-underline">
+                        erbase2025@ifs.edu.br
+                    </a>
+                </small>
             </div>
         </div>
     </footer>
     <!-- End Footer -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>

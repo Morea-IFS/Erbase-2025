@@ -265,6 +265,43 @@ a {
     object-fit: cover;
 }
 
+.glass-btn {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(8px);
+    border: 2px solid #271C57;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    scale: 1;
+    transition: opacity 0.6s ease, visibility 0.6s ease, background 0.3s ease, box-shadow 0.3s ease , scale 0.3s ease;
+}
+
+.glass-btn:hover {
+    background: rgba(255, 255, 255, 0.4);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    border: 2px solid #29166D;
+    scale: 1.05;
+}
+
+.glass-btn:active {
+    background: rgba(255, 255, 255, 0.6);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: 2px solid #29166D !important;
+    scale: 1;
+}
+
+.glass-btn i {
+    color: #271C57;
+}
+
+.fade-btn {
+    opacity: 1;
+    visibility: visible;
+}
+
+.fade-btn.hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
 
 /* Animation styles */
 
