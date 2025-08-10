@@ -64,24 +64,52 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	});
 
-	// === Scroll progress bar dos cards de palestrantes (RESPONSIVO) ===
-	const scrollContainer = document.querySelector(".scroll-snap-x");
+	// --- Scroll progress bar for cards (RESPONSIVE) ---
+	const scrollSnapContainer = document.querySelector(".scroll-snap-x");
 	const progressBar = document.getElementById("scroll-progress-indicator");
 
-	if (scrollContainer && progressBar) {
+	if (scrollSnapContainer && progressBar) {
 		const updateProgressBar = () => {
-			const scrollLeft = scrollContainer.scrollLeft;
+			const scrollLeft = scrollSnapContainer.scrollLeft;
 			const maxScrollLeft =
-				scrollContainer.scrollWidth - scrollContainer.clientWidth;
+				scrollSnapContainer.scrollWidth - scrollSnapContainer.clientWidth;
 
 			const scrollPercent =
 				maxScrollLeft > 0 ? (scrollLeft / maxScrollLeft) * 100 : 100;
 			progressBar.style.width = `${scrollPercent}%`;
 		};
 
-		scrollContainer.addEventListener("scroll", updateProgressBar);
+		scrollSnapContainer.addEventListener("scroll", updateProgressBar);
 		window.addEventListener("load", updateProgressBar);
 		window.addEventListener("resize", updateProgressBar);
+	}
+
+	// --- Horizontal scroll with buttons in speakers section ---
+	const speakersScrollContainer = document.querySelector("#speakers .row");
+	const leftBtn = document.getElementById("scroll-left-btn");
+	const rightBtn = document.getElementById("scroll-right-btn");
+
+	if (speakersScrollContainer && leftBtn && rightBtn) {
+		function updateButtons() {
+			const maxScroll =
+				speakersScrollContainer.scrollWidth - speakersScrollContainer.clientWidth;
+			leftBtn.classList.toggle("hidden", speakersScrollContainer.scrollLeft <= 0);
+			rightBtn.classList.toggle(
+				"hidden",
+				speakersScrollContainer.scrollLeft >= maxScroll - 1
+			);
+		}
+
+		leftBtn.addEventListener("click", () => {
+			speakersScrollContainer.scrollBy({ left: -300, behavior: "smooth" });
+		});
+		rightBtn.addEventListener("click", () => {
+			speakersScrollContainer.scrollBy({ left: 300, behavior: "smooth" });
+		});
+
+		speakersScrollContainer.addEventListener("scroll", updateButtons);
+		window.addEventListener("resize", updateButtons);
+		updateButtons();
 	}
 });
 
