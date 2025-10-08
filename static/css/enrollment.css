@@ -138,37 +138,6 @@
     color: white;
 }
 
-
-@media (max-width: 768px) {
-    .pricing-table thead {
-        display: none;
-    }
-
-    .pricing-table tr {
-        display: block;
-        margin-bottom: 1rem;
-    }
-
-    .pricing-table td {
-        display: flex;
-        text-align: center;
-        position: relative;
-        white-space: normal;
-        justify-content: space-around;
-    }
-
-    .pricing-table td:first-child {
-        background-color: #271C57;
-        color: white;
-        font-weight: bold;
-        text-align: center;
-    }
-
-    .faixa-1, .faixa-2, .faixa-3 {
-        display: inline-block;
-    }
-}
-
 @media (max-width: 900px) {
 
     .logos {
@@ -203,5 +172,45 @@
         display: block;
         position: absolute;
         top: 22em;
+    }
+}
+
+@media (max-width: 768px) {
+    .pricing-table thead {
+        display: none;
+    }
+
+    .pricing-table tr {
+        display: block;
+        margin-bottom: 1rem;
+    }
+
+    .pricing-table td {
+        display: flex;
+        text-align: center;
+        position: relative;
+        white-space: normal;
+        justify-content: space-around;
+    }
+
+    .pricing-table td:first-child {
+        background-color: #271C57;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .faixa-1,
+    .faixa-2,
+    .faixa-3 {
+        display: inline-block;
+    }
+}
+
+@media (max-width: 430px) {
+    .robot {
+        top: 9em;
+        left: 2em;
+        height: 14em;
     }
 }

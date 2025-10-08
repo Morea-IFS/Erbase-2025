@@ -398,6 +398,7 @@ a {
 }
 
 .lamp {
+    height: 12em;
     animation: floatlamp 4s ease-in-out infinite alternate;
 }
 

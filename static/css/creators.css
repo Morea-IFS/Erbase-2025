@@ -1,0 +1,175 @@
+/* Enrollment Page Styles */
+.hero-banner {
+    display: flex;
+    flex-direction: column;
+    height: 30em;
+    background-color: #271C57;
+    color: white;
+    border-radius: 0 0 20px 20px;
+}
+
+.title-creators {
+    user-select: none;
+    height: 13.5em;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    top: -6em;
+    z-index: 1;
+}
+
+.side-logo {
+    position: relative;
+    height: 25em;
+    user-select: none;
+}
+
+.icon-creators {
+    position: relative;
+    left: 4em;
+    z-index: 1;
+    height: 12em;
+}
+
+.title-2 {
+    position: relative;
+    height: 13em;
+    user-select: none;
+}
+
+.city-2 {
+    position: relative;
+    top: -18em;
+    height: 14em;
+}
+
+.hero-state {
+    position: absolute;
+    user-select: none;
+    top: 5em;
+    right: 7em;
+    height: 17em;
+    z-index: 1;
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.hero-city {
+    display: none;
+    animation: none !important;
+    opacity: 1 !important;
+    transform: none !important;
+}
+
+.title::after {
+    margin: 0.5em 0;
+}
+
+.col {
+    padding-inline: 3em;
+}
+
+.creator-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 15px;
+    overflow: hidden;
+    height: 100%;
+}
+
+.creator-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.creator-img {
+    height: 250px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.social-links a {
+    color: #29166D;
+    transition: color 0.3s ease;
+    font-size: 1.5rem;
+    margin: 0 5px;
+}
+
+.social-links a:hover {
+    color: #4CAF50;
+}
+
+@media (max-width: 1200px) {
+    .col {
+        padding-inline: 1em;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .logos {
+        justify-content: center;
+    }
+
+    .city-2 {
+        display: none;
+    }
+
+    .icon-creators {
+        top: 7em;
+        left: 0;
+        height: 10em;
+    }
+
+    .side-logo {
+        display: none;
+    }
+
+    .title-2 {
+        display: none;
+    }
+
+    .hero-state {
+        position: absolute;
+        right: 0;
+        height: 15em;
+    }
+
+    .hero-city {
+        display: block;
+        position: absolute;
+        top: 22em;
+    }
+}
+
+@media (max-width: 768px) {
+    .col {
+        padding-inline: 5.5em;
+    }
+}
+
+@media (max-width: 430px) {
+    .icon-creators {
+        top: 9em;
+        left: 0;
+        height: 8em;
+    }
+
+    .hero-state {
+        height: 12em;
+    }
+
+    .hero-city {
+        height: 12em;
+        top: 25em;
+    }
+
+    .col {
+        padding-inline: 2em;
+    }
+
+}
