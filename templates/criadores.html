@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>ERBASE 2025</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="shortcut icon" href="/static/images/cursor.svg" type="image/x-icon">
+    <link rel="stylesheet" href="/static/css/layout.css">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <link rel="stylesheet" href="/static/css/creators.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <header class="fixed-top">
+        <nav class="navbar navbar-expand-lg border-bottom border-1">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="/static/images/logo-navbar.svg" alt="Erbase Logo" width="90"
+                        class="d-inline-block align-text-top">
+                </a>
+                <button class="navbar-toggler border-0 p-0 m-0" type="button">
+                    <label class="burger" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                        aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <input type="checkbox" id="burger-toggle">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </label>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav d-flex align-items-center me-lg-5 gap-3">
+                        <a class="nav-link d-flex align-items-center" href="/#home">
+                            <i class="fas fa-home me-2"></i>
+                            <span>Início</span>
+                        </a>
+                        <a class="nav-link d-flex align-items-center" href="/#about">
+                            <i class="fas fa-info-circle me-2"></i>
+                            <span>Sobre</span>
+                        </a>
+                        <a class="nav-link d-flex align-items-center" href="/#calls">
+                            <i class="fas fa-bullhorn me-2"></i>
+                            <span>Chamadas</span>
+                        </a>
+                        <a class="nav-link d-flex align-items-center" href="/#schedule">
+                            <i class="fas fa-calendar-alt me-2"></i>
+                            <span>Programação</span>
+                        </a>
+                        <a class="nav-link d-flex align-items-center" href="/#speakers">
+                            <i class="fas fa-user me-2"></i>
+                            <span>Palestrantes</span>
+                        </a>
+                        <a class="nav-link d-flex align-items-center active" href="criadores.html">
+                            <i class="fas fa-users me-2"></i>
+                            <span>Criadores</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!--End Navbar-->
+
+    <main class="bg-light">
+        <!-- Invisible Navbar -->
+        <div class="invisible-navbar"></div>
+        <!-- End Invisible Navbar -->
+        <!-- Hero Section -->
+        <section class="hero-banner">
+            <img src="../static/images/title-creators.svg" alt="Banner criadores" class="title-creators">
+            <div class="logos">
+                <img src="../static/images/side-logo.svg" alt="Erbase Logo" class="side-logo">
+                <img src="../static/images/icon-creators.svg" alt="icone criadores" class="icon-creators">
+                <img src="../static/images/title-2.svg" alt="Cidades Inteligentes Logo" class="title-2">
+            </div>
+            <img src="../static/images/city-2.svg" alt="Cidade" class="city-2">
+            <img src="../static/images/hero-state.svg" alt="Estado" class="hero-state">
+            <img src="../static/images/hero-city.svg" alt="Cidade" class="hero-city">
+        </section>
+        <!-- End Hero Section -->
+
+        <!-- Creators Section -->
+        <section class="py-5 bg-white" id="creators" style="position: relative; z-index: 2;">
+            <div class="container">
+                <h2 class="title mb-5 fw-bold display-6">Equipe de Desenvolvimento</h2>
+
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    <!-- Creator 1 -->
+                    <div class="col">
+                        <div class="card creator-card h-100 border-0 shadow-sm">
+                            <img src="../static/images/criadores/alexandre.webp" class="creator-img card-img-top"
+                                alt="Alexandre Michael">
+                            <div class="card-body">
+                                <h3 class="h4 card-title fw-bold">Alexandre Michael</h3>
+                                <p class="card-text text-muted">Desenvolvedor Full-Stack</p>
+                                <p class="card-text">Atuou na ERBASE 2025 como desenvolvedor front-end, criando
+                                    interfaces e garantindo uma experiência de navegação intuitiva.</p>
+                                <div class="social-links mt-3">
+                                    <a href="https://github.com/Alexandre-Michael" class="text-decoration-none"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.linkedin.com/in/alexandre-michael/" class="text-decoration-none"><i class="fab fa-linkedin"></i></a>
+                                    <a href="" class="text-decoration-none"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Creator 2 -->
+                    <div class="col">
+                        <div class="card creator-card h-100 border-0 shadow-sm">
+                            <img src="../static/images/criadores/romario1.jpg" class="creator-img card-img-top"
+                                alt="Romário">
+                            <div class="card-body">
+                                <h3 class="h4 card-title fw-bold">Romário Silva</h3>
+                                <p class="card-text text-muted">Desenvolvedor Full-Stack</p>
+                                <p class="card-text">Trabalhou no front-end na ERBASE 2025, desenvolvendo as interfaces
+                                    para oferecer uma navegação moderna e eficiente.</p>
+                                <div class="social-links mt-3">
+                                    <a href="https://github.com/RomarioSilva98" class="text-decoration-none"><i class="fab fa-github"></i></a>
+                                    <a href="https://www.linkedin.com/in/romario-silva98" class="text-decoration-none"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.instagram.com/romario_f_silva_" class="text-decoration-none"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Creator 3 -->
+                    <div class="col">
+                        <div class="card creator-card h-100 border-0 shadow-sm">
+                            <img src="../static/images/criadores/edvan.jpg" class="creator-img card-img-top"
+                                alt="Criador 3">
+                            <div class="card-body">
+                                <h3 class="h4 card-title fw-bold">Edvan Barbosa</h3>
+                                <p class="card-text text-muted">Designer UX/UI</p>
+                                <p class="card-text">Responsável pela experiência do usuário, identidade visual e
+                                    prototipagem das interfaces.</p>
+                                <div class="social-links mt-3">
+                                    <a href="https://github.com/edvanbarbosa" class="text-decoration-none"><i class="fab fa-github"></i></a>
+                                    <a href="https://github.com/edvanbarbosa" class="text-decoration-none"><i class="fab fa-linkedin"></i></a>
+                                    <a href="https://www.instagram.com/edvan_barbosaaaaa" class="text-decoration-none"><i class="fab fa-instagram"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Creators Section -->
+
+        <!-- Research Project Section -->
+        <section class="py-5">
+            <div class="container">
+                <div class="research-project">
+                    <h2 class="section-title fw-bold">Projeto de Pesquisa</h2>
+
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <h3 class="h4 fw-bold">ERBASE 2025</h3>
+                            <p class="lead">
+                                A Escola Regional de Computação da Bahia, Alagoas e Sergipe é um evento direcionado a um
+                                público amplo e diverso, composto por profissionais, pesquisadores, estudantes e
+                                entusiastas da
+                                área de Computação.
+                            </p>
+
+                            <h4 class="h5 fw-bold mt-4">Objetivos</h4>
+                            <ul class="list-group list-group-flush">
+                                <li class="list-group-item bg-transparent">
+                                    Divulgar as pesquisas e inovações mais recentes nas variadas áreas da Computação de
+                                    instituições e
+                                    grupos de pesquisa da região;
+                                </li>
+                                <li class="list-group-item bg-transparent">
+                                    Propiciar a formação de novos profissionais da área de Computação na região, bem
+                                    como a atualização de
+                                    profissionais que já atuam no mercado e na academia;
+                                </li>
+                                <li class="list-group-item bg-transparent">
+                                    Promover e popularizar o conhecimento de assuntos, conceitos e inovações
+                                    tecnológicas que norteiam os
+                                    grandes avanços da Computação da atualidade;
+                                </li>
+                                <li class="list-group-item bg-transparent"></li>
+                            </ul>
+
+                            <h4 class="h5 fw-bold mt-4">Metodologia</h4>
+                            <p>
+                                O projeto utiliza uma abordagem multidisciplinar que combina pesquisa teórica com
+                                desenvolvimento de protótipos, validação em ambiente controlado e implementação piloto
+                                em contextos reais.
+                            </p>
+                        </div>
+
+                        <div class="col-lg-4">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold">Informações do Projeto</h5>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            <strong>Duração: </strong>10 meses
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Financiamento: </strong>FEICOM
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Instituição: </strong>IFS - Campus Lagarto
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Coordenador: </strong>Prof. Dr. Rubens de Souza Matos
+                                        </li>
+                                        <li class="list-group-item">
+                                            <strong>Área: </strong>CIÊNCIA DA COMPUTAÇÃO
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- End Research Project Section -->
+
+        <!-- Partners Section -->
+        <section class="py-5">
+            <div class="container bg-black text-white p-4 rounded-4">
+                <h2 class="section-title fw-bold mb-5">Instituições Envolvidas</h2>
+
+                <div class="row align-items-center text-center">
+                    <div class="col-6 col-md-3 mb-4">
+                        <img src="/static/images/ifs-lag.svg" alt="IFS Lagarto" class="img-fluid"
+                            style="max-height: 80px;">
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <img src="/static/images/ufs.svg" alt="UFS" class="img-fluid" style="max-height: 80px;">
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <img src="/static/images/uninassau.svg" alt="UNINASSAU" class="img-fluid"
+                            style="max-height: 80px;">
+                    </div>
+                    <div class="col-6 col-md-3 mb-4">
+                        <img src="/static/images/fapitec.svg" alt="FAPITEC" class="img-fluid" style="max-height: 80px;">
+                    </div>
+                </div>
+                <h2 class="section-title fw-bold mt-5 text-center">Mais um Projeto do <span
+                        style="background: -webkit-linear-gradient(#00fbff, #0e438d); 
+                        -webkit-background-clip: text; 
+                        -webkit-text-fill-color: transparent;
+                        font-weight: bolder;">MOREA</span></h2>
+                <div class="text-center mt-4 mb-4">
+                    <img src="/static/images/logo-morea-colorful.svg" alt="MOREA Logo" class="img-fluid"
+                        style="max-height: 130px;">
+                </div>
+            </div>
+        </section>
+        <!-- End Partners Section -->
+    </main>
+
+    <!-- Footer -->
+    <footer class="text-white py-5" style="background-color: #29166D; border-radius: 20px 20px 0 0;">
+        <div class="container">
+            <div class="row gy-4 text-center text-md-start">
+                <!-- Realization -->
+                <div class="col-md-3">
+                    <h6 class="text-uppercase fw-bold mb-3">Realização</h6>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
+                        <a href="https://www.sbc.org.br/" target="_blank" rel="noopener noreferrer">
+                            <img src="/static/images/sbc.svg" alt="SBC" height="60" />
+                        </a>
+                        <img src="/static/images/ifs-lag.svg" alt="IFS Lagarto" height="60" />
+                    </div>
+                </div>
+
+                <!-- Support -->
+                <div class="col-md-3">
+                    <h6 class="text-uppercase fw-bold mb-3">Apoio</h6>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
+                        <img src="/static/images/ufs.svg" alt="UFS" height="60" />
+                        <img src="/static/images/uninassau.svg" alt="UNINASSAU" height="60" />
+                    </div>
+                </div>
+
+                <!-- Funding -->
+                <div class="col-md-3">
+                    <h6 class="text-uppercase fw-bold mb-3">Fomento</h6>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-md-start gap-3">
+                        <img src="/static/images/ifs-propex.svg" alt="IFS Propex" height="60"
+                            style="max-width: 100%;" />
+                        <img src="/static/images/fapitec.svg" alt="FAPITEC" height="60" />
+                    </div>
+                </div>
+
+                <!-- Sponsorship -->
+                <div class="col-md-3">
+                    <h6 class="text-uppercase fw-bold mb-3">Patrocínio</h6>
+
+                    <!-- Ouro -->
+                    <p class="fw-bold text-warning mb-2 text-center">Ouro</p>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-md-center gap-3 mb-3">
+                        <img src="/static/images/quero-delivery.svg" alt="Quero Delivery" height="80" />
+                        <img src="/static/images/tecnos.png" alt="Tecnos" height="60" />
+                    </div>
+
+                    <!-- Bronze -->
+                    <p class="fw-bold mb-2 text-center" style="color: #f96939;">Bronze</p>
+                    <div class="d-flex flex-wrap justify-content-center justify-content-md-center gap-3">
+                        <img src="/static/images/minas.png" alt="Minas" height="80" />
+                        <img src="/static/images/gm-tech.svg" alt="GMTech" height="80" />
+                    </div>
+                </div>
+            </div>
+
+            <hr class="border-light" />
+
+            <div
+                class="d-flex flex-column flex-md-row justify-content-center justify-content-md-between align-items-center mt-4 px-2 text-center text-md-start">
+                <small>&copy; 2025 ERBASE - Todos os direitos reservados.</small>
+                <small>
+                    Contato:
+                    <a href="mailto:erbase2025@ifs.edu.br" class="text-white text-decoration-underline">
+                        erbase2025@ifs.edu.br
+                    </a>
+                </small>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script>
+        // Script simples para melhorar a interação
+        document.addEventListener('DOMContentLoaded', function () {
+            // Adiciona classe active ao item do menu atual
+            const currentPage = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            navLinks.forEach(link => {
+                if (link.getAttribute('href') === currentPage) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
